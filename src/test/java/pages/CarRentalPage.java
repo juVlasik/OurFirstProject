@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import utilities.Driver;
 
-public class CarRentalPage {
+public class CarRentalPage{
 
 	
 public  CarRentalPage() {

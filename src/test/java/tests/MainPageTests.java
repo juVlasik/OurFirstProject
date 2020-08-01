@@ -35,19 +35,19 @@ import utilities.Driver;
 
 public class MainPageTests extends TestBase {
 
-	MainPage mp = new MainPage();
-	BookingFlightPage bf = new BookingFlightPage();
-	CarRentalPage crp = new CarRentalPage();
-	
-	protected WebDriver driver;
-	protected Actions actions;
+//	MainPage mp = new MainPage();
+//	BookingFlightPage bf = new BookingFlightPage();
+//	CarRentalPage crp = new CarRentalPage();
+//	
 
 	
 	    @Test
 	    public void successfulMoveToCarRenetalPage() {
+	    	MainPage mp = new MainPage();
 	    	mp.rentACar();
 	    	BrowserUtilities.waitFor(5);
-	    	String actual = driver.getTitle();
+	    	
+	    	String actual = Driver.getDriver().getTitle();
 	    	String expected = "Rental Cars and Car Rentals in Vero Beach from Travelocity";
 	    	
 	    	assertEquals(actual, expected); //See if we successfully entered Car Rental Page
@@ -57,8 +57,13 @@ public class MainPageTests extends TestBase {
 	
         @Test
         public void successfulMoveToFlightsPage() {
+        	MainPage mp = new MainPage();
     	mp.bookingAFlight();
-	    	String actual = driver.getTitle();	    	
+    	
+    	BrowserUtilities.waitFor(10);
+    	
+	    	String actual = Driver.getDriver().getTitle();
+	    	System.out.println(actual);
 	    	String expected = "DCA to IEV Flights | Travelocity";
 	        assertEquals(actual, expected); //See if we successfully entered Flight Booking Page
 	     }
@@ -66,38 +71,39 @@ public class MainPageTests extends TestBase {
 	
 	
 	
-//		@Test
-//		public void rentingACarTest1() { //This test is checking if cars prices are ordered from low to high
-//		
-//			mp.rentACar(); //Calling my method that will take me to "Car rent page"
-//			
-//			//click on PREMIUM checkbox to narrow the search
-//			BrowserUtilities.waitFor(4);
-//			
-//			Actions actions = new Actions(driver); 
-//			actions.moveToElement(crp.premiumCheckbox).click().build().perform();
-//			
-//			
-//			
-//			List<Integer> prices = new ArrayList<Integer>();
-//			
-//		    for (WebElement webElement : crp.priceList) {
-//			
-//			prices.add(Integer.parseInt(webElement.getText().replace("$", "").replace(",", "")));
-//			
-//		    }
-//		    
-//		    System.out.println(prices);
-//		    
-//			List<Integer> sortedPrices = prices;
-//			Collections.sort(sortedPrices);
-//		
-//			System.out.println(sortedPrices);
-//			
-//			//Check if cars are displayed sorted by price low to high
-//			assertEquals(prices, sortedPrices);
-//			
-//		}
+		@Test
+		public void rentingACarTest1() { //This test is checking if cars prices are ordered from low to high
+			MainPage mp = new MainPage();
+			CarRentalPage crp = new CarRentalPage();
+			mp.rentACar(); //Calling my method that will take me to "Car rent page"
+			
+			//click on PREMIUM checkbox to narrow the search
+			BrowserUtilities.waitFor(4);
+			
+			actions = new Actions(Driver.getDriver()); 
+			actions.moveToElement(crp.premiumCheckbox).click().build().perform();
+			
+			
+			
+			List<Integer> prices = new ArrayList<Integer>();
+			
+		    for (WebElement webElement : crp.priceList) {
+			
+			prices.add(Integer.parseInt(webElement.getText().replace("$", "").replace(",", "")));
+			
+		    }
+		    
+		    System.out.println(prices);
+		    
+			List<Integer> sortedPrices = prices;
+			Collections.sort(sortedPrices);
+		
+			System.out.println(sortedPrices);
+			
+			//Check if cars are displayed sorted by price low to high
+			assertEquals(prices, sortedPrices);
+			
+		}
 	
 		
 		

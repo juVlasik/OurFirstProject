@@ -66,9 +66,9 @@ public abstract class TestBase {
 		
 		
 		
-//		@AfterMethod (alwaysRun = true)
-//		public void tearDownMethod(ITestResult testResult) throws IOException {
-//			
+		@AfterMethod (alwaysRun = true)
+		public void tearDownMethod(ITestResult testResult) throws IOException {
+			
 //			if (logger != null) {
 //				if (testResult.getStatus() == ITestResult.SUCCESS) {
 //
@@ -83,8 +83,8 @@ public abstract class TestBase {
 //					logger.addScreenCaptureFromPath(path); // Attaches the screenshot image to the report
 //				} 
 //			}
-//			Driver.quit();
-//		}
+			Driver.quit();
+		}
 		
 		
 		
