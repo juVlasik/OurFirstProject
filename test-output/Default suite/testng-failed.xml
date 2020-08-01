@@ -5,8 +5,7 @@
     <classes>
       <class name="tests.MainPageTests">
         <methods>
-          <include name="successfulMoveToFlightsPage"/>
-          <include name="successfulMoveToCarRenetalPage"/>
+          <include name="checkCarRentalPricesOrder1"/>
           <include name="tearDownMethod"/>
           <include name="setUpMethod"/>
         </methods>

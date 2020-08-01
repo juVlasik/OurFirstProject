@@ -103,47 +103,48 @@ public class MainPage {
         
         
         
-//        @FindBy (xpath = "//button[@id='header-account-menu']")
-//	    public WebElement accountButton;
-//        
-//        
-//        
-//        
-//        @FindBy (id = "gss-signup-submit" )
-//        public WebElement accSignUp;
-//        
-//        @FindBy (id = "gss-signup-first-name")
-//        public WebElement firstNameField;
-//
-//        @FindBy (id = "gss-signup-last-name")
-//        public WebElement lastNameField;
-//        
-//        
-//        @FindBy (id = "gss-signup-email")
-//        public WebElement emailField;
-//        
-//        @FindBy (id = "gss-signup-password")
-//        public WebElement passwordField;
-//        
-//        @FindBy (id = "gss-signup-submit")
-//        public WebElement signUpButton;
-//        
-//        
-//        
-//        
-//        @FindBy (id = "account-signin" )
-//        public WebElement accSignIn;
-//        
-//        @FindBy (id = "gss-signin-email")
-//        public WebElement signinEmail;
-//        
-//        @FindBy (id = "gss-signin-password")
-//        public WebElement signinPassword;
-//        
-//        @FindBy (id = "gss-signin-submit")
-//        public WebElement signinButton;
+        @FindBy (xpath = "//button[@id='header-account-menu']")
+	    public WebElement accountButton;
         
         
+        
+        
+        @FindBy (id = "gss-signup-submit" )
+        public WebElement accSignUp;
+        
+        @FindBy (id = "gss-signup-first-name")
+        public WebElement firstNameField;
+
+        @FindBy (id = "gss-signup-last-name")
+        public WebElement lastNameField;
+        
+        
+        @FindBy (id = "gss-signup-email")
+        public WebElement emailField;
+        
+        @FindBy (id = "gss-signup-password")
+        public WebElement passwordField;
+        
+        @FindBy (id = "gss-signup-submit")
+        public WebElement signUpButton;
+        
+        
+        
+        
+        @FindBy (id = "account-signin" )
+        public WebElement accSignIn;
+        
+        @FindBy (id = "gss-signin-email")
+        public WebElement signinEmail;
+        
+        @FindBy (id = "gss-signin-password")
+        public WebElement signinPassword;
+        
+        @FindBy (id = "gss-signin-submit")
+        public WebElement signinButton;
+        
+        @FindBy (xpath = "//p[contains(text(), \"Please enter a password\")]")
+        public WebElement errorMessage;
         
         
         //Renting a car method
