@@ -5,7 +5,8 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
     <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -23,6 +24,7 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
       <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
@@ -49,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Julia\AppData\Local\Temp\testng-eclipse--1264747194\testng-customsuite.xml</span>
+                    <span>C:\Users\Owner\AppData\Local\Temp\testng-eclipse--319260734\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,17 +104,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tests.MainPageTests" hash-for-method="rentingACarTest1">rentingACarTest1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tests.MainPageTests" hash-for-method="successfulMoveToCarRenetalPage">successfulMoveToCarRenetalPage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tests.MainPageTests" hash-for-method="successfulMoveToFlightsPage">successfulMoveToFlightsPage</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tests.VacationRentalsTest" hash-for-method="successfulRentalsSearch">successfulRentalsSearch</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -130,28 +122,14 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.MainPageTests</span>
+              <span class="class-name">tests.VacationRentalsTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="rentingACarTest1">
-                  </a> <!-- rentingACarTest1 -->
-                  <span class="method-name">rentingACarTest1</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="successfulMoveToCarRenetalPage">
-                  </a> <!-- successfulMoveToCarRenetalPage -->
-                  <span class="method-name">successfulMoveToCarRenetalPage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="successfulMoveToFlightsPage">
-                  </a> <!-- successfulMoveToFlightsPage -->
-                  <span class="method-name">successfulMoveToFlightsPage</span>
+                  <a name="successfulRentalsSearch">
+                  </a> <!-- successfulRentalsSearch -->
+                  <span class="method-name">successfulRentalsSearch</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -159,7 +137,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Julia\AppData\Local\Temp\testng-eclipse--1264747194\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Owner\AppData\Local\Temp\testng-eclipse--319260734\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -168,7 +146,11 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.MainPageTests&quot;/&gt;
+      &lt;class name=&quot;tests.VacationRentalsTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;successfulRentalsSearch&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- tests.VacationRentalsTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -208,24 +190,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'successfulMoveToFlightsPage')
-data.setCell(0, 2, 'tests.MainPageTests')
-data.setCell(0, 3, 32697);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'rentingACarTest1')
-data.setCell(1, 2, 'tests.MainPageTests')
-data.setCell(1, 3, 17631);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'successfulMoveToCarRenetalPage')
-data.setCell(2, 2, 'tests.MainPageTests')
-data.setCell(2, 3, 17102);
+data.setCell(0, 1, 'successfulRentalsSearch')
+data.setCell(0, 2, 'tests.VacationRentalsTest')
+data.setCell(0, 3, 26392);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 26 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -240,9 +214,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.VacationRentalsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">successfulMoveToVacationRentalsPage</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -251,46 +232,23 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.MainPageTests</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.VacationRentalsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUpMethod(null)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">rentingACarTest1</span>
-                <span class="method-start">9554 ms</span>
+                <span class="method-name">successfulRentalsSearch</span>
+                <span class="method-start">35922 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDownMethod([TestResult name=rentingACarTest1 status=SUCCESS method=MainPageTests.rentingACarTest1()[pri:0, inst...)</span>
-                <span class="method-start">27189 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpMethod(null)</span>
-                <span class="method-start">27933 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">successfulMoveToCarRenetalPage</span>
-                <span class="method-start">35824 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownMethod([TestResult name=successfulMoveToCarRenetalPage status=SUCCESS method=MainPageTests.successfulMoveTo...)</span>
-                <span class="method-start">52928 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpMethod(null)</span>
-                <span class="method-start">53664 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">successfulMoveToFlightsPage</span>
-                <span class="method-start">61419 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownMethod([TestResult name=successfulMoveToFlightsPage status=SUCCESS method=MainPageTests.successfulMoveToFli...)</span>
-                <span class="method-start">94117 ms</span>
+                <span class="method-name">tearDownMethod([TestResult name=successfulRentalsSearch status=SUCCESS method=VacationRentalsTest.successfulRentals...)</span>
+                <span class="method-start">62345 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
 </html>

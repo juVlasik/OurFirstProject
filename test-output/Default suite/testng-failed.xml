@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.MainPageTests">
+      <class name="tests.VacationRentalsTest">
         <methods>
-          <include name="successfulMoveToFlightsPage"/>
-          <include name="successfulMoveToCarRenetalPage"/>
+          <include name="successfulMoveToVacationRentalsPage"/>
           <include name="tearDownMethod"/>
           <include name="setUpMethod"/>
         </methods>
-      </class> <!-- tests.MainPageTests -->
+      </class> <!-- tests.VacationRentalsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

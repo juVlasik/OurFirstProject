@@ -98,7 +98,8 @@ public class MainPage {
 	    public WebElement TripsForMe;
         
        
-        
+        @FindBy (xpath = "//*[@id=\"all-in-vacationRental-header-link\"]")
+        public WebElement VacationRentalsButton;
         
         
         
