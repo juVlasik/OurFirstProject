@@ -5,7 +5,7 @@
     <classes>
       <class name="tests.MainPageTests">
         <methods>
-          <include name="checkCarRentalPricesOrder1"/>
+          <include name="successfulMoveToHotelsPage"/>
           <include name="tearDownMethod"/>
           <include name="setUpMethod"/>
         </methods>

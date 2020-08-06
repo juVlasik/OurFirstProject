@@ -30,6 +30,7 @@ import com.github.javafaker.Faker;
 
 import pages.BookingFlightPage;
 import pages.CarRentalPage;
+import pages.HotelsBookingPage;
 import pages.MainPage;
 import utilities.BrowserUtilities;
 import utilities.ConfigReader;
@@ -37,7 +38,7 @@ import utilities.Driver;
 
 public class MainPageTests extends TestBase {
 
-
+/*JULIAS CODE
 	
 	    @Test (priority = 1)
 	    public void successfulMoveToCarRenetalPage() {
@@ -220,8 +221,8 @@ public class MainPageTests extends TestBase {
 	    String expected = "Please enter a password";
 	    
 	    assertEquals(actual, expected); //Checking if error message pops up if we don't provide a password for Login
-	}
-	
+	}JULIAS CODE END
+	*/
 	
 	
 	
@@ -318,6 +319,17 @@ public class MainPageTests extends TestBase {
 ////		assertEquals(percentage, sortedPercentage);
 //	}
 	
+	@Test (priority = 1)
+	public void successfulMoveToHotelsPage()  {
+		
+		HotelsBookingPage hpg = new HotelsBookingPage();
+		
+		hpg.verifyLandingHotelsPage();
+		
+		hpg.searchHotelIstanbul();
+	}
+
+	}
 
 
-}
+
