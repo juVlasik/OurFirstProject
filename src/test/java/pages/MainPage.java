@@ -104,9 +104,9 @@ public class MainPage {
         
         
         
-//        @FindBy (xpath = "//button[@id='header-account-menu']")
-//	    public WebElement accountButton;
-//        
+        @FindBy (xpath = "//*[@id=\"all-in-deals-header-link\"]")
+	    public WebElement TravelDealsButton;
+        
 //        
 //        
 //        

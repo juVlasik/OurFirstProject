@@ -33,6 +33,7 @@ public class VacationRentalsPage {
      @FindBy (xpath = "//*[@id=\"VR-searchButtonExt1\"]")
      public WebElement searchButton;
   
-    
+     @FindBy (xpath = "//*[@id=\"app\"]/div[1]/div[2]/div")
+     public WebElement popUpBox;
 
 }

@@ -1,7 +1,9 @@
 package tests;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 import pages.MainPage;
@@ -9,7 +11,7 @@ import pages.VacationRentalsPage;
 import utilities.BrowserUtilities;
 import utilities.Driver;
 
-public class VacationRentalsTest extends TestBase {
+public class VacationRentalsTests extends TestBase {
 
 	
 	@Test
@@ -29,18 +31,15 @@ public class VacationRentalsTest extends TestBase {
 		mp.VacationRentalsButton.click();
 		BrowserUtilities.waitFor(5);
 		VacationRentalsPage vp = new VacationRentalsPage();
-		vp.destinationBox.sendKeys("New York, NY");
+		vp.destinationBox.sendKeys("New York");
 		BrowserUtilities.waitFor(5);
 		
 		vp.dateFrom.sendKeys("9/1/2020");
-		vp.dateTo.sendKeys("9/2/2020");
+		vp.dateTo.click();
 		vp.searchButton.click();
+
 		
-		BrowserUtilities.waitFor(10);
-		
-		
-		
-		
+		assertTrue(driver.getTitle().contains("New York"));
 		
 	}
 	
