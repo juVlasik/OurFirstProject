@@ -5,8 +5,7 @@
     <classes>
       <class name="tests.MainPageTests">
         <methods>
-          <include name="checkCarRentalPricesOrder1"/>
-          <include name="tearDownMethod"/>
+          <include name="flightPaymentTest"/>
           <include name="setUpMethod"/>
         </methods>
       </class> <!-- tests.MainPageTests -->

@@ -9,18 +9,19 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">165,234</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">61,243</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.MainPageTests</td><td><a href="#m0">checkCarRentalPricesOrder1</a></td><td rowspan="1">1596314447956</td><td rowspan="1">20306</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">tests.MainPageTests</td><td><a href="#m1">bookAFlightTest1</a></td><td rowspan="1">1596314476771</td><td rowspan="1">42931</td></tr><tr class="passedeven"><td><a href="#m2">negativeLogin2</a></td><td rowspan="1">1596314528614</td><td rowspan="1">7889</td></tr><tr class="passedeven"><td><a href="#m3">successfulMoveToCarRenetalPage</a></td><td rowspan="1">1596314380786</td><td rowspan="1">18608</td></tr><tr class="passedeven"><td><a href="#m4">successfulMoveToFlightsPage</a></td><td rowspan="1">1596314407736</td><td rowspan="1">30594</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.MainPageTests</td><td><a href="#m0">flightPaymentTest</a></td><td rowspan="1">1596681620033</td><td rowspan="1">54320</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">tests.MainPageTests#checkCarRentalPricesOrder1</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+<h2>Default test</h2><h3 id="m0">tests.MainPageTests#flightPaymentTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;bookButton&apos;]&quot;}
   (Session info: chrome=84.0.4147.105)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;JULIA-LAPTOP&apos;, ip: &apos;192.168.1.181&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+System info: host: &apos;LAPTOP-H38VGSI7&apos;, ip: &apos;192.168.1.254&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\Julia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59286}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 7105209736e8222caa5743e36efa6dbd
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\ardil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59484}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9b051459fb5dea5d8d4ff6e412e08e51
+*** Element info: {Using=xpath, value=//button[@id=&apos;bookButton&apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -31,9 +32,23 @@ Session ID: 7105209736e8222caa5743e36efa6dbd
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
-	at tests.MainPageTests.checkCarRentalPricesOrder1(MainPageTests.java:91)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.collect(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at tests.MainPageTests.flightPaymentTest(MainPageTests.java:444)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -63,9 +78,5 @@ Session ID: 7105209736e8222caa5743e36efa6dbd
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">tests.MainPageTests#bookAFlightTest1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">tests.MainPageTests#negativeLogin2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">tests.MainPageTests#successfulMoveToCarRenetalPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">tests.MainPageTests#successfulMoveToFlightsPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

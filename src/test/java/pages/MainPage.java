@@ -21,9 +21,22 @@ public class MainPage {
 		
 		PageFactory.initElements(Driver.getDriver(), this); // This statement is initializing the variables that are tagged
 															//with @FindBy annotations
-		
+		 
 	}
 	
+        //Test case 6
+        
+        @FindBy (xpath = "//figure[@class='image aspect-ratio16-9']")
+        public List<WebElement> travelInspiration;
+        
+        //Test case 7
+        
+        @FindBy (xpath = "//button[@data-section-id='#section-activity-tab-hp']")
+        public WebElement thingsToDoButton;
+        
+        @FindBy (xpath = "//input[@id='activity-destination-hp-activity']")
+        public WebElement activityDestButton;
+        
         
         
         

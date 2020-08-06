@@ -54,7 +54,7 @@ public abstract class TestBase {
 		@BeforeMethod (alwaysRun = true)
 		@Parameters ("browser")
 		public void setUpMethod(@Optional String browser) {
-			
+			 
 			driver = Driver.getDriver(browser);
 			actions = new Actions(driver);
 			driver.manage().timeouts().implicitlyWait(
@@ -66,25 +66,25 @@ public abstract class TestBase {
 		
 		
 		
-		@AfterMethod (alwaysRun = true)
-		public void tearDownMethod(ITestResult testResult) throws IOException {
-			
-//			if (logger != null) {
-//				if (testResult.getStatus() == ITestResult.SUCCESS) {
-//
-//					logger.pass("PASSED, test case: " + testResult.getName());
-//				} else if (testResult.getStatus() == ITestResult.SKIP) {
-//					logger.skip("SKIPPED, test case: " + testResult.getName());
-//					logger.skip(testResult.getThrowable());
-//				} else if (testResult.getStatus() == ITestResult.FAILURE) {
-//					logger.fail("FAILED, test result: " + testResult.getName());
-//					logger.fail(testResult.getThrowable());
-//					String path = BrowserUtilities.getFullScreenshot(testResult.getName()); //takes the screenshot of entire page
-//					logger.addScreenCaptureFromPath(path); // Attaches the screenshot image to the report
-//				} 
-//			}
-			Driver.quit();
-		}
+//		@AfterMethod (alwaysRun = true)
+//		public void tearDownMethod(ITestResult testResult) throws IOException {
+//			
+////			if (logger != null) {
+////				if (testResult.getStatus() == ITestResult.SUCCESS) {
+////
+////					logger.pass("PASSED, test case: " + testResult.getName());
+////				} else if (testResult.getStatus() == ITestResult.SKIP) {
+////					logger.skip("SKIPPED, test case: " + testResult.getName());
+////					logger.skip(testResult.getThrowable());
+////				} else if (testResult.getStatus() == ITestResult.FAILURE) {
+////					logger.fail("FAILED, test result: " + testResult.getName());
+////					logger.fail(testResult.getThrowable());
+////					String path = BrowserUtilities.getFullScreenshot(testResult.getName()); //takes the screenshot of entire page
+////					logger.addScreenCaptureFromPath(path); // Attaches the screenshot image to the report
+////				} 
+////			}
+//			Driver.quit();
+//		}
 		
 		
 		

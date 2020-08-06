@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Aug 01 16:39:32 EDT 2020</td>
+<td>Started on:</td><td>Wed Aug 05 19:40:13 PDT 2020</td>
 </tr>
-<tr><td>Total time:</td><td>165 seconds (165234 ms)</td>
+<tr><td>Total time:</td><td>61 seconds (61243 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,15 +75,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.MainPageTests.checkCarRentalPricesOrder1()'><b>checkCarRentalPricesOrder1</b><br>Test class: tests.MainPageTests</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+<td title='tests.MainPageTests.flightPaymentTest()'><b>flightPaymentTest</b><br>Test class: tests.MainPageTests</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;bookButton&apos;]&quot;}
   (Session info: chrome=84.0.4147.105)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;JULIA-LAPTOP&apos;, ip: &apos;192.168.1.181&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+System info: host: &apos;LAPTOP-H38VGSI7&apos;, ip: &apos;192.168.1.254&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\Julia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59286}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 7105209736e8222caa5743e36efa6dbd
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\ardil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59484}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9b051459fb5dea5d8d4ff6e412e08e51
+*** Element info: {Using=xpath, value=//button[@id=&apos;bookButton&apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -94,9 +95,23 @@ Session ID: 7105209736e8222caa5743e36efa6dbd
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
-	at tests.MainPageTests.checkCarRentalPricesOrder1(MainPageTests.java:91)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.collect(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at tests.MainPageTests.flightPaymentTest(MainPageTests.java:444)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -125,15 +140,16 @@ Session ID: 7105209736e8222caa5743e36efa6dbd
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace455036946", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace455036946'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+</pre></div><a href='#' onClick='toggleBox("stack-trace814111376", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace814111376'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;bookButton&apos;]&quot;}
   (Session info: chrome=84.0.4147.105)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;JULIA-LAPTOP&apos;, ip: &apos;192.168.1.181&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+System info: host: &apos;LAPTOP-H38VGSI7&apos;, ip: &apos;192.168.1.254&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\Julia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59286}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 7105209736e8222caa5743e36efa6dbd
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\ardil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59484}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9b051459fb5dea5d8d4ff6e412e08e51
+*** Element info: {Using=xpath, value=//button[@id=&apos;bookButton&apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -144,9 +160,23 @@ Session ID: 7105209736e8222caa5743e36efa6dbd
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
-	at tests.MainPageTests.checkCarRentalPricesOrder1(MainPageTests.java:91)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.collect(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+	at tests.MainPageTests.flightPaymentTest(MainPageTests.java:444)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -176,36 +206,8 @@ Session ID: 7105209736e8222caa5743e36efa6dbd
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>20</td>
-<td>tests.MainPageTests@2d127a61</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='tests.MainPageTests.bookAFlightTest1()'><b>bookAFlightTest1</b><br>Test class: tests.MainPageTests</td>
-<td></td>
-<td>42</td>
-<td>tests.MainPageTests@2d127a61</td></tr>
-<tr>
-<td title='tests.MainPageTests.negativeLogin2()'><b>negativeLogin2</b><br>Test class: tests.MainPageTests</td>
-<td></td>
-<td>7</td>
-<td>tests.MainPageTests@2d127a61</td></tr>
-<tr>
-<td title='tests.MainPageTests.successfulMoveToCarRenetalPage()'><b>successfulMoveToCarRenetalPage</b><br>Test class: tests.MainPageTests</td>
-<td></td>
-<td>18</td>
-<td>tests.MainPageTests@2d127a61</td></tr>
-<tr>
-<td title='tests.MainPageTests.successfulMoveToFlightsPage()'><b>successfulMoveToFlightsPage</b><br>Test class: tests.MainPageTests</td>
-<td></td>
-<td>30</td>
-<td>tests.MainPageTests@2d127a61</td></tr>
+<td>54</td>
+<td>tests.MainPageTests@282003e1</td></tr>
 </table><p>
 </body>
 </html>

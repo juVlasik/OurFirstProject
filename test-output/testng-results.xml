@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="165234" started-at="2020-08-01T16:39:32 EDT" finished-at="2020-08-01T16:42:17 EDT">
+  <suite name="Default suite" duration-ms="61243" started-at="2020-08-05T19:40:13 PDT" finished-at="2020-08-05T19:41:14 PDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="165234" started-at="2020-08-01T16:39:32 EDT" finished-at="2020-08-01T16:42:17 EDT">
+    <test name="Default test" duration-ms="61243" started-at="2020-08-05T19:40:13 PDT" finished-at="2020-08-05T19:41:14 PDT">
       <class name="tests.MainPageTests">
-        <test-method status="PASS" signature="setUpMethod(java.lang.String)[pri:0, instance:tests.MainPageTests@2d127a61]" name="setUpMethod" is-config="true" duration-ms="8704" started-at="2020-08-01T16:39:32 EDT" finished-at="2020-08-01T16:39:40 EDT">
+        <test-method status="PASS" signature="setUpMethod(java.lang.String)[pri:0, instance:tests.MainPageTests@282003e1]" name="setUpMethod" is-config="true" duration-ms="6891" started-at="2020-08-05T19:40:13 PDT" finished-at="2020-08-05T19:40:20 PDT">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -16,75 +16,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method status="PASS" signature="successfulMoveToCarRenetalPage()[pri:1, instance:tests.MainPageTests@2d127a61]" name="successfulMoveToCarRenetalPage" duration-ms="18608" started-at="2020-08-01T16:39:40 EDT" finished-at="2020-08-01T16:39:59 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- successfulMoveToCarRenetalPage -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MainPageTests@2d127a61]" name="tearDownMethod" is-config="true" duration-ms="763" started-at="2020-08-01T16:39:59 EDT" finished-at="2020-08-01T16:40:00 EDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=successfulMoveToCarRenetalPage status=SUCCESS method=MainPageTests.successfulMoveToCarRenetalPage()[pri:1, instance:tests.MainPageTests@2d127a61] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="setUpMethod(java.lang.String)[pri:0, instance:tests.MainPageTests@2d127a61]" name="setUpMethod" is-config="true" duration-ms="7570" started-at="2020-08-01T16:40:00 EDT" finished-at="2020-08-01T16:40:07 EDT">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method status="PASS" signature="successfulMoveToFlightsPage()[pri:2, instance:tests.MainPageTests@2d127a61]" name="successfulMoveToFlightsPage" duration-ms="30594" started-at="2020-08-01T16:40:07 EDT" finished-at="2020-08-01T16:40:38 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- successfulMoveToFlightsPage -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MainPageTests@2d127a61]" name="tearDownMethod" is-config="true" duration-ms="757" started-at="2020-08-01T16:40:38 EDT" finished-at="2020-08-01T16:40:39 EDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=successfulMoveToFlightsPage status=SUCCESS method=MainPageTests.successfulMoveToFlightsPage()[pri:2, instance:tests.MainPageTests@2d127a61] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="setUpMethod(java.lang.String)[pri:0, instance:tests.MainPageTests@2d127a61]" name="setUpMethod" is-config="true" duration-ms="8865" started-at="2020-08-01T16:40:39 EDT" finished-at="2020-08-01T16:40:47 EDT">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method status="FAIL" signature="checkCarRentalPricesOrder1()[pri:3, instance:tests.MainPageTests@2d127a61]" name="checkCarRentalPricesOrder1" duration-ms="20306" started-at="2020-08-01T16:40:47 EDT" finished-at="2020-08-01T16:41:08 EDT">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
+        <test-method status="FAIL" signature="flightPaymentTest()[pri:9, instance:tests.MainPageTests@282003e1]" name="flightPaymentTest" duration-ms="54320" started-at="2020-08-05T19:40:20 PDT" finished-at="2020-08-05T19:41:14 PDT">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[stale element reference: element is not attached to the page document
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='bookButton']"}
   (Session info: chrome=84.0.4147.105)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'JULIA-LAPTOP', ip: '192.168.1.181', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+System info: host: 'LAPTOP-H38VGSI7', ip: '192.168.1.254', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\Julia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59286}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 7105209736e8222caa5743e36efa6dbd]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\ardil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59484}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9b051459fb5dea5d8d4ff6e412e08e51
+*** Element info: {Using=xpath, value=//button[@id='bookButton']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='bookButton']"}
   (Session info: chrome=84.0.4147.105)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'JULIA-LAPTOP', ip: '192.168.1.181', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+System info: host: 'LAPTOP-H38VGSI7', ip: '192.168.1.254', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\Julia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59286}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 7105209736e8222caa5743e36efa6dbd
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\ardil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59484}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9b051459fb5dea5d8d4ff6e412e08e51
+*** Element info: {Using=xpath, value=//button[@id='bookButton']}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -95,9 +49,23 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)
-at tests.MainPageTests.checkCarRentalPricesOrder1(MainPageTests.java:91)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy11.getWrappedElement(Unknown Source)
+at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.collect(Unknown Source)
+at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+at tests.MainPageTests.flightPaymentTest(MainPageTests.java:444)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -128,69 +96,10 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkCarRentalPricesOrder1 -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MainPageTests@2d127a61]" name="tearDownMethod" is-config="true" duration-ms="791" started-at="2020-08-01T16:41:08 EDT" finished-at="2020-08-01T16:41:09 EDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=checkCarRentalPricesOrder1 status=FAILURE method=MainPageTests.checkCarRentalPricesOrder1()[pri:3, instance:tests.MainPageTests@2d127a61] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="setUpMethod(java.lang.String)[pri:0, instance:tests.MainPageTests@2d127a61]" name="setUpMethod" is-config="true" duration-ms="7709" started-at="2020-08-01T16:41:09 EDT" finished-at="2020-08-01T16:41:16 EDT">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method status="PASS" signature="bookAFlightTest1()[pri:4, instance:tests.MainPageTests@2d127a61]" name="bookAFlightTest1" duration-ms="42931" started-at="2020-08-01T16:41:16 EDT" finished-at="2020-08-01T16:41:59 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bookAFlightTest1 -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MainPageTests@2d127a61]" name="tearDownMethod" is-config="true" duration-ms="1124" started-at="2020-08-01T16:41:59 EDT" finished-at="2020-08-01T16:42:00 EDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=bookAFlightTest1 status=SUCCESS method=MainPageTests.bookAFlightTest1()[pri:4, instance:tests.MainPageTests@2d127a61] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="setUpMethod(java.lang.String)[pri:0, instance:tests.MainPageTests@2d127a61]" name="setUpMethod" is-config="true" duration-ms="7785" started-at="2020-08-01T16:42:00 EDT" finished-at="2020-08-01T16:42:08 EDT">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method status="PASS" signature="negativeLogin2()[pri:5, instance:tests.MainPageTests@2d127a61]" name="negativeLogin2" duration-ms="7889" started-at="2020-08-01T16:42:08 EDT" finished-at="2020-08-01T16:42:16 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- negativeLogin2 -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MainPageTests@2d127a61]" name="tearDownMethod" is-config="true" duration-ms="775" started-at="2020-08-01T16:42:16 EDT" finished-at="2020-08-01T16:42:17 EDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=negativeLogin2 status=SUCCESS method=MainPageTests.negativeLogin2()[pri:5, instance:tests.MainPageTests@2d127a61] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
+        </test-method> <!-- flightPaymentTest -->
       </class> <!-- tests.MainPageTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
