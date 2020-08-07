@@ -54,7 +54,7 @@ public abstract class TestBase {
 		@BeforeMethod (alwaysRun = true)
 		@Parameters ("browser")
 		public void setUpMethod(@Optional String browser) {
-			
+			 
 			driver = Driver.getDriver(browser);
 			actions = new Actions(driver);
 			driver.manage().timeouts().implicitlyWait(
@@ -83,7 +83,7 @@ public abstract class TestBase {
 //					logger.addScreenCaptureFromPath(path); // Attaches the screenshot image to the report
 //				} 
 //			}
-			Driver.quit();
+			//Driver.quit();
 		}
 		
 		

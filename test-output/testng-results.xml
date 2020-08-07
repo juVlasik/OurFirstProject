@@ -1,13 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
   <suite name="Default suite" duration-ms="73930" started-at="2020-08-07T11:45:16 EDT" finished-at="2020-08-07T11:46:30 EDT">
+=======
+<testng-results skipped="0" failed="0" ignored="9" total="10" passed="1">
+  <reporter-output>
+  </reporter-output>
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="13434" started-at="2020-08-07T00:24:06 EDT" finished-at="2020-08-07T00:24:19 EDT">
+=======
+  <suite name="Default suite" duration-ms="82729" started-at="2020-08-07T01:14:15 PDT" finished-at="2020-08-07T01:15:38 PDT">
+>>>>>>> 03e1d5462c35d9781890691dcca8f8077338318f
+>>>>>>> 965f96ba1ad16e6f4c10e393bec658608d0dcee8
     <groups>
+      <group name="newTest">
+        <method signature="MainPageTests.travelInspirationlinks()[pri:0, instance:tests.MainPageTests@3e77a1ed]" name="travelInspirationlinks" class="tests.MainPageTests"/>
+      </group> <!-- newTest -->
     </groups>
+<<<<<<< HEAD
     <test name="Default test" duration-ms="73930" started-at="2020-08-07T11:45:16 EDT" finished-at="2020-08-07T11:46:30 EDT">
       <class name="tests.MainPageTests">
         <test-method status="PASS" signature="setUpMethod(java.lang.String)[pri:0, instance:tests.MainPageTests@2d127a61]" name="setUpMethod" is-config="true" duration-ms="7576" started-at="2020-08-07T11:45:16 EDT" finished-at="2020-08-07T11:45:23 EDT">
+=======
+<<<<<<< HEAD
+    <test name="Default test" duration-ms="13434" started-at="2020-08-07T00:24:06 EDT" finished-at="2020-08-07T00:24:19 EDT">
+      <class name="tests.MobilePageTest">
+        <test-method status="PASS" signature="setUpMethod(java.lang.String)[pri:0, instance:tests.MobilePageTest@17776a8]" name="setUpMethod" is-config="true" duration-ms="7436" started-at="2020-08-07T00:24:06 EDT" finished-at="2020-08-07T00:24:13 EDT">
+=======
+    <test name="Default test" duration-ms="82729" started-at="2020-08-07T01:14:15 PDT" finished-at="2020-08-07T01:15:38 PDT">
+      <class name="tests.MainPageTests">
+        <test-method status="PASS" signature="setUpMethod(java.lang.String)[pri:0, instance:tests.MainPageTests@3e77a1ed]" name="setUpMethod" is-config="true" duration-ms="7795" started-at="2020-08-07T01:14:15 PDT" finished-at="2020-08-07T01:14:23 PDT">
+>>>>>>> 03e1d5462c35d9781890691dcca8f8077338318f
+>>>>>>> 965f96ba1ad16e6f4c10e393bec658608d0dcee8
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -16,6 +42,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
+<<<<<<< HEAD
         <test-method status="FAIL" signature="successfulMoveToHotelsPage()[pri:0, instance:tests.MainPageTests@2d127a61]" name="successfulMoveToHotelsPage" duration-ms="65566" started-at="2020-08-07T11:45:23 EDT" finished-at="2020-08-07T11:46:29 EDT">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
@@ -97,13 +124,36 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=successfulMoveToHotelsPage status=FAILURE method=MainPageTests.successfulMoveToHotelsPage()[pri:0, instance:tests.MainPageTests@2d127a61] output={null}]]]>
+=======
+<<<<<<< HEAD
+        <test-method status="PASS" signature="mobileTabTest()[pri:0, instance:tests.MobilePageTest@17776a8]" name="mobileTabTest" duration-ms="5972" started-at="2020-08-07T00:24:13 EDT" finished-at="2020-08-07T00:24:19 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobileTabTest -->
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MobilePageTest@17776a8]" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2020-08-07T00:24:19 EDT" finished-at="2020-08-07T00:24:19 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=mobileTabTest status=SUCCESS method=MobilePageTest.mobileTabTest()[pri:0, instance:tests.MobilePageTest@17776a8] output={null}]]]>
+=======
+        <test-method status="PASS" signature="travelInspirationlinks()[pri:0, instance:tests.MainPageTests@3e77a1ed]" name="travelInspirationlinks" duration-ms="74145" started-at="2020-08-07T01:14:23 PDT" finished-at="2020-08-07T01:15:37 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- travelInspirationlinks -->
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MainPageTests@3e77a1ed]" name="tearDownMethod" is-config="true" duration-ms="753" started-at="2020-08-07T01:15:37 PDT" finished-at="2020-08-07T01:15:38 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=travelInspirationlinks status=SUCCESS method=MainPageTests.travelInspirationlinks()[pri:0, instance:tests.MainPageTests@3e77a1ed] output={null}]]]>
+>>>>>>> 03e1d5462c35d9781890691dcca8f8077338318f
+>>>>>>> 965f96ba1ad16e6f4c10e393bec658608d0dcee8
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-      </class> <!-- tests.MainPageTests -->
+      </class> <!-- tests.MobilePageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

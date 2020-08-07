@@ -5,8 +5,10 @@
     <classes>
       <class name="tests.MainPageTests">
         <methods>
-          <include name="rentingACarTest1"/>
+          <include name="travelInspirationlinks"/>
+          <include name="reserveAFlightButtonCheck"/>
           <include name="tearDownMethod"/>
+          <include name="bookAFlightTest1"/>
           <include name="setUpMethod"/>
         </methods>
       </class> <!-- tests.MainPageTests -->

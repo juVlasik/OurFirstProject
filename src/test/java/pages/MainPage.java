@@ -11,6 +11,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import utilities.BrowserUtilities;
 import utilities.Driver;
@@ -21,9 +22,22 @@ public class MainPage {
 		
 		PageFactory.initElements(Driver.getDriver(), this); // This statement is initializing the variables that are tagged
 															//with @FindBy annotations
-		
+		 
 	}
 	
+ //Test case 6
+        
+        @FindBy (xpath = "//figure[@class='image aspect-ratio16-9']")
+        public List<WebElement> travelInspiration;
+        
+        //Test case 7
+        
+        @FindBy (xpath = "//button[@data-section-id='#section-activity-tab-hp']")
+        public WebElement thingsToDoButton;
+        
+        @FindBy (xpath = "//input[@id='activity-destination-hp-activity']")
+        public WebElement activityDestButton;
+        
         
         
         
@@ -63,9 +77,7 @@ public class MainPage {
         @FindBy (xpath = "//*[text()='Flights ']")
         public WebElement flightsButton;
         
-//        @FindBy (id = "tab-flight-tab-hp")
-//        public WebElement flightButton;
-        
+
         @FindBy (id = "flight-type-one-way-label-hp-flight")
         public WebElement oneWayButton;
         
@@ -98,15 +110,17 @@ public class MainPage {
 	    public WebElement TripsForMe;
         
        
+        @FindBy (xpath = "//*[@id=\"all-in-vacationRental-header-link\"]")
+        public WebElement VacationRentalsButton;
         
         
         
         
+        @FindBy (xpath = "//*[@id=\"primary-header-deals\"]")
+	    public WebElement TravelDealsButton;
         
         @FindBy (xpath = "//button[@id='header-account-menu']")
 	    public WebElement accountButton;
-        
-        
         
         
         @FindBy (id = "gss-signup-submit" )
@@ -145,6 +159,10 @@ public class MainPage {
         
         @FindBy (xpath = "//p[contains(text(), \"Please enter a password\")]")
         public WebElement errorMessage;
+        
+        
+        @FindBy (xpath = "//*[@id=\"all-in-mobile-header-link\"]")
+        public WebElement mobileButton;
         
         
         //Renting a car method
@@ -253,7 +271,7 @@ public class MainPage {
 	//Selection one adult
 		 
 		 Select s = new Select(adultNoButton);
-		 s.selectByValue("1");
+		 s.selectByValue("3");
 		
 		 js.executeScript("window.scrollBy(0,200)");
 //		 BrowserUtilities.waitFor(4);
@@ -268,5 +286,22 @@ public class MainPage {
 		 
 		
 }
+		
+		public void thingsToDoButtonTest() { 
+			
+		  
+		     
+			thingsToDoButton.click();
+			
+			activityDestButton.sendKeys("Colorado" + Keys.ENTER);
+			BrowserUtilities.waitFor(5);
+			
+			SoftAssert sa = new SoftAssert();
+			String expected = "Things to do in Colorado | Travelocity";
+			String actual = Driver.getDriver().getTitle();
+			
+			sa.assertEquals(actual, expected);
+			}
 }
+
         

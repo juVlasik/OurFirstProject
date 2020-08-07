@@ -1,9 +1,25 @@
-C:\Users\Julia\eclipse-workspace\my-project-framework\src\test\java\tests\TestBase.java
-C:\Users\Julia\eclipse-workspace\my-project-framework\src\test\java\pages\BookingFlightPage.java
-C:\Users\Julia\eclipse-workspace\my-project-framework\src\test\java\utilities\ConfigReader.java
-C:\Users\Julia\eclipse-workspace\my-project-framework\src\test\java\pages\CarRentalPage.java
-C:\Users\Julia\eclipse-workspace\my-project-framework\src\test\java\tests\Example.java
-C:\Users\Julia\eclipse-workspace\my-project-framework\src\test\java\utilities\BrowserUtilities.java
-C:\Users\Julia\eclipse-workspace\my-project-framework\src\test\java\utilities\Driver.java
-C:\Users\Julia\eclipse-workspace\my-project-framework\src\test\java\tests\MainPageTests.java
-C:\Users\Julia\eclipse-workspace\my-project-framework\src\test\java\pages\MainPage.java
+<<<<<<< HEAD
+C:\Users\Owner\git\OurFirstProject\src\test\java\tests\VacationRentalsTest.java
+C:\Users\Owner\git\OurFirstProject\src\test\java\pages\BookingFlightPage.java
+C:\Users\Owner\git\OurFirstProject\src\test\java\pages\VacationRentalsPage.java
+C:\Users\Owner\git\OurFirstProject\src\test\java\utilities\Driver.java
+C:\Users\Owner\git\OurFirstProject\src\test\java\tests\TestBase.java
+C:\Users\Owner\git\OurFirstProject\src\test\java\pages\CarRentalPage.java
+C:\Users\Owner\git\OurFirstProject\src\test\java\pages\MainPage.java
+C:\Users\Owner\git\OurFirstProject\src\test\java\utilities\BrowserUtilities.java
+C:\Users\Owner\git\OurFirstProject\src\test\java\tests\MainPageTests.java
+C:\Users\Owner\git\OurFirstProject\src\test\java\tests\Example.java
+C:\Users\Owner\git\OurFirstProject\src\test\java\utilities\ConfigReader.java
+=======
+C:\Users\ardil\git\OurFirstProject\src\test\java\pages\ThingsToDoPage.java
+C:\Users\ardil\git\OurFirstProject\src\test\java\pages\MainPage.java
+C:\Users\ardil\git\OurFirstProject\src\test\java\tests\Example.java
+C:\Users\ardil\git\OurFirstProject\src\test\java\pages\BookingFlightPage.java
+C:\Users\ardil\git\OurFirstProject\src\test\java\utilities\ConfigReader.java
+C:\Users\ardil\git\OurFirstProject\src\test\java\tests\TestBase.java
+C:\Users\ardil\git\OurFirstProject\src\test\java\pages\HotelsBookingPage.java
+C:\Users\ardil\git\OurFirstProject\src\test\java\tests\MainPageTests.java
+C:\Users\ardil\git\OurFirstProject\src\test\java\utilities\BrowserUtilities.java
+C:\Users\ardil\git\OurFirstProject\src\test\java\pages\CarRentalPage.java
+C:\Users\ardil\git\OurFirstProject\src\test\java\utilities\Driver.java
+>>>>>>> 03e1d5462c35d9781890691dcca8f8077338318f

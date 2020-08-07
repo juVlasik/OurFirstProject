@@ -3,13 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.MainPageTests">
+      <class name="tests.MobilePageTest">
         <methods>
-          <include name="successfulMoveToHotelsPage"/>
+<<<<<<< HEAD
+          <include name="mobileTabTest"/>
           <include name="tearDownMethod"/>
+=======
+          <include name="travelInspirationlinks"/>
+          <include name="tearDownSuite"/>
+>>>>>>> 03e1d5462c35d9781890691dcca8f8077338318f
           <include name="setUpMethod"/>
         </methods>
-      </class> <!-- tests.MainPageTests -->
+      </class> <!-- tests.MobilePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
