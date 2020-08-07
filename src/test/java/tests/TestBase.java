@@ -83,7 +83,8 @@ public abstract class TestBase {
 //					logger.addScreenCaptureFromPath(path); // Attaches the screenshot image to the report
 //				} 
 //			}
-			//Driver.quit();
+			
+			Driver.quit();
 		}
 		
 		

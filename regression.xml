@@ -3,11 +3,15 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
   
-    <classes>
-      <class name="tests.MainPageTests"/>
-      <class name="VacationRentalsTests"/>
-    </classes>
     
+    <classes>
+       <class name="tests.MainPageTests"/>
+       <class name="tests.CruisesTest"/>
+      <class name="tests.MobilePageTest"/>
+      <class name="tests.TravelDealsTests"/>
+      <class name="tests.VacationRentalsTests"/>
+    </classes>
+   
     
   </test> <!-- Test -->
 </suite> <!-- Suite -->

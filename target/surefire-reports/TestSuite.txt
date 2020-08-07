@@ -1,8 +1,21 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 287.703 s <<< FAILURE! - in TestSuite
-tests.MainPageTests.reserveAFlightButtonCheck  Time elapsed: 69.583 s  <<< FAILURE!
+Tests run: 19, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 602.077 s <<< FAILURE! - in TestSuite
+tests.MainPageTests.bookAFlightTest1  Time elapsed: 27.162 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//button[@class='btn-secondary btn-action t-select-btn'])[1]"}
+  (Session info: chrome=84.0.4147.105)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-H38VGSI7', ip: '192.168.0.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\ardil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65213}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: ff5c0a45fd8360465275d611c3459b44
+*** Element info: {Using=xpath, value=(//button[@class='btn-secondary btn-action t-select-btn'])[1]}
+	at tests.MainPageTests.bookAFlightTest1(MainPageTests.java:176)
+
+tests.MainPageTests.reserveAFlightButtonCheck  Time elapsed: 58.745 s  <<< FAILURE!
 org.openqa.selenium.json.JsonException: 
 java.lang.reflect.InvocationTargetException
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
@@ -18,8 +31,47 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-H38VGSI7', ip: '192.168.0.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\ardil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61081}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 9b5cd2310684e1af76501a297e5e0c48
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\ardil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50090}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d00309a271bc985dbab5dd670d3d01da
 *** Element info: {Using=xpath, value=//button[@id='bookButton']}
 	at tests.MainPageTests.reserveAFlightButtonCheck(MainPageTests.java:387)
+
+tests.MobilePageTest.mobileTabTest  Time elapsed: 15.46 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="appDLPhoneNumber"]"}
+  (Session info: chrome=84.0.4147.105)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-H38VGSI7', ip: '192.168.0.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\ardil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51609}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e804f4549ad75708bcb0bc4ebd570596
+*** Element info: {Using=xpath, value=//*[@id="appDLPhoneNumber"]}
+	at tests.MobilePageTest.mobileTabTest(MobilePageTest.java:24)
+
+tests.TravelDealsTests.testTravelDealsPageHotels  Time elapsed: 13.385 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div/div/div/div/ul/li[1]/div/label/span[1]"}
+  (Session info: chrome=84.0.4147.105)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-H38VGSI7', ip: '192.168.0.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\ardil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51931}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b8749b6e640d894953ade7163fcce576
+*** Element info: {Using=xpath, value=//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div/div/div/div/ul/li[1]/div/label/span[1]}
+	at tests.TravelDealsTests.testTravelDealsPageHotels(TravelDealsTests.java:51)
+
+tests.TravelDealsTests.testTravelDealsPagePackges  Time elapsed: 12.505 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="wizard-package-pwa-1"]/div[2]/div[1]/div/div[1]/div/div/div/button[1]"}
+  (Session info: chrome=84.0.4147.105)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-H38VGSI7', ip: '192.168.0.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\ardil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52044}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 2e25f4bb75468b62d663a640a1b6653c
+*** Element info: {Using=xpath, value=//*[@id="wizard-package-pwa-1"]/div[2]/div[1]/div/div[1]/div/div/div/button[1]}
+	at tests.TravelDealsTests.testTravelDealsPagePackges(TravelDealsTests.java:68)
 
