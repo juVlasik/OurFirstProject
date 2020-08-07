@@ -63,9 +63,7 @@ public class MainPage {
         @FindBy (xpath = "//*[text()='Flights ']")
         public WebElement flightsButton;
         
-//        @FindBy (id = "tab-flight-tab-hp")
-//        public WebElement flightButton;
-        
+
         @FindBy (id = "flight-type-one-way-label-hp-flight")
         public WebElement oneWayButton;
         
@@ -104,47 +102,52 @@ public class MainPage {
         
         
         
-        @FindBy (xpath = "//*[@id=\"all-in-deals-header-link\"]")
+        @FindBy (xpath = "//*[@id=\"primary-header-deals\"]")
 	    public WebElement TravelDealsButton;
         
-//        
-//        
-//        
-//        @FindBy (id = "gss-signup-submit" )
-//        public WebElement accSignUp;
-//        
-//        @FindBy (id = "gss-signup-first-name")
-//        public WebElement firstNameField;
-//
-//        @FindBy (id = "gss-signup-last-name")
-//        public WebElement lastNameField;
-//        
-//        
-//        @FindBy (id = "gss-signup-email")
-//        public WebElement emailField;
-//        
-//        @FindBy (id = "gss-signup-password")
-//        public WebElement passwordField;
-//        
-//        @FindBy (id = "gss-signup-submit")
-//        public WebElement signUpButton;
-//        
-//        
-//        
-//        
-//        @FindBy (id = "account-signin" )
-//        public WebElement accSignIn;
-//        
-//        @FindBy (id = "gss-signin-email")
-//        public WebElement signinEmail;
-//        
-//        @FindBy (id = "gss-signin-password")
-//        public WebElement signinPassword;
-//        
-//        @FindBy (id = "gss-signin-submit")
-//        public WebElement signinButton;
+
         
         
+        @FindBy (id = "gss-signup-submit" )
+        public WebElement accSignUp;
+        
+        @FindBy (id = "gss-signup-first-name")
+        public WebElement firstNameField;
+
+        @FindBy (id = "gss-signup-last-name")
+        public WebElement lastNameField;
+        
+        
+        @FindBy (id = "gss-signup-email")
+        public WebElement emailField;
+        
+        @FindBy (id = "gss-signup-password")
+        public WebElement passwordField;
+        
+        @FindBy (id = "gss-signup-submit")
+        public WebElement signUpButton;
+        
+        
+        
+        
+        @FindBy (id = "account-signin" )
+        public WebElement accSignIn;
+        
+        @FindBy (id = "gss-signin-email")
+        public WebElement signinEmail;
+        
+        @FindBy (id = "gss-signin-password")
+        public WebElement signinPassword;
+        
+        @FindBy (id = "gss-signin-submit")
+        public WebElement signinButton;
+        
+        @FindBy (xpath = "//p[contains(text(), \"Please enter a password\")]")
+        public WebElement errorMessage;
+        
+        
+        @FindBy (xpath = "//*[@id=\"all-in-mobile-header-link\"]")
+        public WebElement mobileButton;
         
         
         //Renting a car method

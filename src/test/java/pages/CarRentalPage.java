@@ -26,15 +26,24 @@ public  CarRentalPage() {
 	@FindBy(xpath = "//span[@class='full-price bold ']")
 	public List<WebElement> priceList;
 	
+	@FindBy(xpath = "//span[@class='full-price bold ']")
+	public List<WebElement> sortedPriceList;
+	
+//	@FindBy (xpath = "//span[contains(text(), \"Total Price\")]")   
+//	public WebElement totalPriceButton;
+	
+	@FindBy (xpath = "(//button[@class='btn-sort tab'])[1]")   
+			public WebElement totalPriceButton;
+	
 	@FindBy(xpath = "//span[@id='filter-carClass-economy-label']")
 	public WebElement economyCheckbox;
-	
-//	@FindBy(id = "filter-carClass-economy-label")
-//	public WebElement economyCheckbox;
 	
 	
 	@FindBy(xpath = "//span[@class='distance large-screen-only tablet-only']")
 	public List<WebElement> distance;
+	
+	@FindBy (xpath = "//div[@class='img-review-container']")
+	public List<WebElement> rating;
 	
 	@FindBy (xpath = "//input[@id='carClass-premium']")
 	public WebElement premiumCheckbox;

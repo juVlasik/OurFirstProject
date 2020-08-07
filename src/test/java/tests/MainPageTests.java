@@ -7,6 +7,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -23,11 +24,13 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.github.javafaker.Faker;
 
 import pages.BookingFlightPage;
 import pages.CarRentalPage;
+import pages.HotelsBookingPage;
 import pages.MainPage;
 import utilities.BrowserUtilities;
 import utilities.ConfigReader;
@@ -35,13 +38,9 @@ import utilities.Driver;
 
 public class MainPageTests extends TestBase {
 
-//	MainPage mp = new MainPage();
-//	BookingFlightPage bf = new BookingFlightPage();
-//	CarRentalPage crp = new CarRentalPage();
-//	
-
+/*JULIAS CODE
 	
-	    @Test
+	    @Test (priority = 1)
 	    public void successfulMoveToCarRenetalPage() {
 	    	MainPage mp = new MainPage();
 	    	mp.rentACar();
@@ -55,7 +54,7 @@ public class MainPageTests extends TestBase {
 	
 	
 	
-        @Test
+        @Test (priority = 2)
         public void successfulMoveToFlightsPage() {
         	MainPage mp = new MainPage();
     	mp.bookingAFlight();
@@ -71,15 +70,16 @@ public class MainPageTests extends TestBase {
 	
 	
 	
-		@Test
-		public void rentingACarTest1() { //This test is checking if cars prices are ordered from low to high
+		@Test (priority = 3)
+		public void checkCarRentalPricesOrder1() { //This test is checking if cars prices are ordered from low to high
 			MainPage mp = new MainPage();
 			CarRentalPage crp = new CarRentalPage();
+			
 			mp.rentACar(); //Calling my method that will take me to "Car rent page"
 			
 			//click on PREMIUM checkbox to narrow the search
-			BrowserUtilities.waitFor(4);
 			
+			BrowserUtilities.waitFor(4);
 			actions = new Actions(Driver.getDriver()); 
 			actions.moveToElement(crp.premiumCheckbox).click().build().perform();
 			
@@ -95,118 +95,143 @@ public class MainPageTests extends TestBase {
 		    
 		    System.out.println(prices);
 		    
-			List<Integer> sortedPrices = prices;
-			Collections.sort(sortedPrices);
-		
-			System.out.println(sortedPrices);
+		    Collections.sort(prices);
+		    
+		    //Click on "Total Prices" to sort cars by price in ascending order
+		    BrowserUtilities.waitFor(5);
+		    
+		     
+			crp.totalPriceButton.click();
+		    //crp.customerRatingButton.click();
+		    
+		    
+		    
+            List<Integer> sortedPrices = new ArrayList<Integer>();
+			
+		    for (WebElement webElement : crp.sortedPriceList) {
+			
+			sortedPrices.add(Integer.parseInt(webElement.getText().replace("$", "").replace(",", "")));
+			
+		    }
+		    
+		    System.out.println(sortedPrices);
+		   
 			
 			//Check if cars are displayed sorted by price low to high
 			assertEquals(prices, sortedPrices);
 			
+	}
+	
+		
+		
+		
+	
+	
+	@Test (priority = 4)
+	public void bookAFlightTest1(){ //2 TESTS: Checking departure/destination 
+		                            //&& Making sure switching to the next page once click "Select Flight"
+		
+		           MainPage mp = new MainPage();
+		           BookingFlightPage bf = new BookingFlightPage();
+		           
+		           mp.bookingAFlight(); //My Method that will bring me to "Book a Flight Page"
+		           
+			       //Pick sort by duration
+		           Select s = new Select(bf.sortMenuButton);
+		       	
+		       	   s.selectByValue("leg0departuretime:asc");
+		       	   
+		       	   //Confirm arrival airport
+		       	   SoftAssert sa = new SoftAssert();
+		       	   
+		       	   String expected = "Kyiv, Ukraine (IEV)";
+		       	   String actual = bf.arrivalAirport.getAttribute("value");
+		       	   
+			
+		       	   sa.assertEquals(actual, expected);
+		       	   
+		       	//Confirm departure airport
+		       	   
+		       	   String expected1 = "Washington, DC, United States (DCA)";
+		       	   String actual1 = bf.departureAirport.getAttribute("value");
+		       	   
+			
+		       	   sa.assertEquals(actual1, expected1);
+		       	   
+		       	   
+		       	   //Click on select first flight
+		       	   
+		       	   bf.selectButton.click();
+		       	   
+		       	   
+		       	   
+		       	   //Turn off the pop up
+		       	   BrowserUtilities.waitFor(5);
+		       	actions = new Actions(Driver.getDriver()); 
+         		actions.moveToElement(bf.noThanksButton).click().build().perform();
+		       	   
+		       //Check if successfully switch to next page
+         		
+         		BrowserUtilities.waitFor(5);
+         		
+         		//System.out.println("current handle" + Driver.getDriver().getWindowHandle());
+		       	   String currentHandle = "CDwindow-1F09F91102C01BF8919F2D2C17C94BB6";
+		       	   
+		       	String parentWindowHandle=driver.getWindowHandle();
+				
+				Set<String> allHandles = driver.getWindowHandles();
+				
+				
+				for (String handle : allHandles) {
+					if(!handle.equals(parentWindowHandle)) {
+						driver.switchTo().window(handle);
+						
+					}
+					
+				}
+				
+				String actualTitle = Driver.getDriver().getTitle();  
+				String expectedTitle = "Trip Detail | Travelocity";
+				
+				sa.assertEquals(actualTitle, expectedTitle);
 		}
-	
-		
-		
-		
-//		@Test
-//		public void rentingACarTest2() {//Sorting cars by distance
-//			
-//			mp.rentACar();
-//			
-////			actions = new Actions (driver);
-////			actions.moveToElement(crp.economyCheckbox).click().build().perform();
-//			
-//           // crp.economyCheckbox.click();
-//			List<Integer> miles = new ArrayList<Integer>();
-//			
-//			for (WebElement distance : crp.distance) {
-//				System.out.println(distance.getText().replace(".", "").replace(" mi from Vero Beach city center", "")
-//						.replace(".", "").replace(" mi from Vero Beach city center", ""));
-//				//miles.add(Integer.parseInt(distance.getText().replace(".", "").replace(" miles from Vero Beach city center", "")));
-//				//System.out.println(miles);
-//				System.out.println(distance.getText());
-//			}
-//			
-//			
-//			
-//			
-//			
-//			
-//			//}
-//			
-//			//List<Integer> sortedPercentage = percentage;
-//			
-//			//System.out.println(percentage);
-////			Collections.sort(percentage);
-////				
-////			
-////			//Click on Customer Rating Button
-////			BrowserUtilities.waitFor(3);	
-////			crp.customerRatingButton.click();	
-////				
-////		 //Check if cars are displayed sorted by price
-////			
-////			System.out.println(sortedPercentage);
-////			
-////			assertEquals(percentage, sortedPercentage);
-//		}
-		
-		
-			
-			
-
-		
-	
-	
-//	@Test
-//	public void bookAFlightTest1(){
-//		
-//		           mp.bookingAFlight(); //My Method that will bring me to "Book a Flight Page"
-//		           
-//			       List<String> flightPrices1 = new ArrayList<>();
-//			 
-//			 
-//			        for (WebElement price : bf.flightPrices) {
-//					if (price.getText().contains("Price is unavailable. Click to search") || (price.getText().contains("$")) || 
-//							(price.getText().contains("$")) || price.getText().contains("Cheapest") || price.getText().contains("Departs")) {
-//						//bf.flightPrices.remove(price);
-//					
-//				    flightPrices1.add(price.getText().replace("Price is unavailable. Click to search", "0").
-//				    		replace("Search", "0").replace(",", "").replace("$", "").replace(",", ""));
-//						
-//				
-//					
-//					//flightPrices1.add(price.getText().substring(price.getText().indexOf(","), price.getText().indexOf(" ")).replace(",", ""));
-//					}
-//					
-//					System.out.println(price.getText());
-//			        }
-//			        System.out.println(flightPrices1);
-//					
-//					//List<Integer> flightPrices2 = new ArrayList<Integer>();
-//					
-//					//flightPrices2.add(Integer.parseInt(webElement.getText().replace("$", "").replace(",", "")));
-//					
-//					
-//					
-////					List<Integer> sortedPrices = prices;
-////					Collections.sort(sortedPrices);
-////				
-////					//Check if cars are displayed sorted by price
-////					assertEquals(prices, sortedPrices);
-			
-	//	}
 			
 		
 			
 
+
+
+	@Test (priority = 5)
+	public void negativeLogin2() { //trying to Logun with wrong username and NO password
+		MainPage mp = new MainPage();
+	
+		Faker f = new Faker();
+		
+		mp.accountButton.click();
+	
+	    mp.accSignIn.click();
+	    
+	    mp.signinEmail.sendKeys(f.name().username() + "@mail.ru");
+	
+	    mp.signinPassword.sendKeys(Keys.TAB);
+	    
+	    mp.signinButton.click();
+	    
+	    String actual = mp.errorMessage.getText();
+	    String expected = "Please enter a password";
+	    
+	    assertEquals(actual, expected); //Checking if error message pops up if we don't provide a password for Login
+	}JULIAS CODE END
+	*/
 	
 	
 	
 	
 	
 //	@Test 
-//	public void negativeLogin() {
+//	public void negativeLogin() { //try to Login with wrong name AND password
+//		
+//		MainPage mp = new MainPage();
 //		
 //		Faker f = new Faker();
 //		
@@ -222,28 +247,12 @@ public class MainPageTests extends TestBase {
 //	}
 	
 	
-//	@Test 
-//	public void negativeLogin2() {
-//		
-//		Faker f = new Faker();
-//		
-//		mp.accountButton.click();
-//	
-//	    mp.accSignIn.click();
-//	    
-//	    mp.signinEmail.sendKeys(f.name().username() + "@mail.ru");
-//	
-//	    mp.signinPassword.sendKeys(Keys.TAB);
-//	    
-//	    mp.signinButton.click();
-//	}
 	
 	
 	
-
 //	@Test
 //	public void createNewAccount() throws InterruptedException { //Doesn't work, CAPTCHA pops up
-//		
+//		MainPage mp = new MainPage();
 //		Faker f = new Faker();
 //		
 //		
@@ -256,6 +265,71 @@ public class MainPageTests extends TestBase {
 //	mp.emailField.sendKeys( f.name().username()+"@mail.ru");
 //	mp.passwordField.sendKeys("jjjnnn89");
 //	mp.signUpButton.click();
-//	
+//	}
 
-}
+	
+//	@Test
+//	public void rentingACarTest2() {//Sorting cars by Customer rating
+//		
+//		MainPage mp = new MainPage();
+//		CarRentalPage crp = new CarRentalPage();
+//		
+//    mp.rentACar();
+//		
+//	actions = new Actions(Driver.getDriver()); 
+//	actions.moveToElement(crp.premiumCheckbox).click().build().perform();
+//	
+////		actions = new Actions (driver);
+////		actions.moveToElement(crp.economyCheckbox).click().build().perform();
+//       // crp.economyCheckbox.click();
+//	
+//	crp.customerRatingButton.click();
+//	
+//		List<Integer> percentage = new ArrayList<Integer>();
+//		
+//		for (WebElement rating : crp.rating) {
+//			System.out.println(rating.getText().replace("%", "").replace("recommend", ""));
+//			
+//			percentage.add(Integer.parseInt(rating.getText().replace("%", "").replace("recommend", "").replace(" ", "")));
+//		}
+//		
+//		System.out.println(percentage);
+//		
+//		
+//		
+//		
+//		
+//		
+//		
+//		
+//		//}
+//		
+//		//List<Integer> sortedPercentage = percentage;
+//		
+//		//System.out.println(percentage);
+////		Collections.sort(percentage);
+////			
+////		
+////		
+////			
+////	 //Check if cars are displayed sorted by price
+////		
+////		System.out.println(sortedPercentage);
+////		
+////		assertEquals(percentage, sortedPercentage);
+//	}
+	
+	@Test (priority = 1)
+	public void successfulMoveToHotelsPage()  {
+		
+		HotelsBookingPage hpg = new HotelsBookingPage();
+		
+		hpg.verifyLandingHotelsPage();
+		
+		hpg.searchHotelIstanbul();
+	}
+
+	}
+
+
+
