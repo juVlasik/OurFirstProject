@@ -77,9 +77,7 @@ public class MainPage {
         @FindBy (xpath = "//*[text()='Flights ']")
         public WebElement flightsButton;
         
-//        @FindBy (id = "tab-flight-tab-hp")
-//        public WebElement flightButton;
-        
+
         @FindBy (id = "flight-type-one-way-label-hp-flight")
         public WebElement oneWayButton;
         
@@ -112,15 +110,17 @@ public class MainPage {
 	    public WebElement TripsForMe;
         
        
+        @FindBy (xpath = "//*[@id=\"all-in-vacationRental-header-link\"]")
+        public WebElement VacationRentalsButton;
         
         
         
         
+        @FindBy (xpath = "//*[@id=\"primary-header-deals\"]")
+	    public WebElement TravelDealsButton;
         
         @FindBy (xpath = "//button[@id='header-account-menu']")
 	    public WebElement accountButton;
-        
-        
         
         
         @FindBy (id = "gss-signup-submit" )
@@ -159,6 +159,10 @@ public class MainPage {
         
         @FindBy (xpath = "//p[contains(text(), \"Please enter a password\")]")
         public WebElement errorMessage;
+        
+        
+        @FindBy (xpath = "//*[@id=\"all-in-mobile-header-link\"]")
+        public WebElement mobileButton;
         
         
         //Renting a car method

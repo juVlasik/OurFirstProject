@@ -12,6 +12,7 @@
   
     <classes>
       <class name="tests.MainPageTests"/>
+      <class name="VacationRentalsTests"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

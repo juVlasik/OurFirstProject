@@ -187,7 +187,7 @@ public void bookAFlightTest1(){ //2 TESTS: Checking departure/destination
      		BrowserUtilities.waitFor(5);
      		
      		//System.out.println("current handle" + Driver.getDriver().getWindowHandle());
-	       	   String currentHandle = "CDwindow-1F09F91102C01BF8919F2D2C17C94BB6"; 
+	       	   String currentHandle = "CDwindow-1F09F91102C01BF8919F2D2C17C94BB6";
 	       	   
 	       	String parentWindowHandle=driver.getWindowHandle();
 			
@@ -279,9 +279,6 @@ public void travelInspirationlinks() {
 
 
 
-
-
-
 @Test (groups = {"newTest"})//test 8
 
 public void carRentPaymentPageVerification() {
@@ -321,6 +318,8 @@ sa.assertEquals(actual, expected);
 	
 	
 }
+
+
 
 
 
@@ -396,7 +395,10 @@ public void reserveAFlightButtonCheck() {
 
 
 
-@Test (dataProvider="car booking info", groups = {"newTest"})   //test 10 //Inserting info at Car Rental Payment Page
+
+//test 10 //Inserting info at Car Rental Payment Page
+
+@Test (dataProvider="car booking info", groups = {"newTest"})   
 
 public void fcarRentPaymentPageWithdataProvider(String name, String phoneNo, 
 		String email, String password, String password2)throws InterruptedException {   
@@ -466,7 +468,13 @@ cr.reserveButton2.click(); //Switched handles and landing on Car Rental Payment 
 		};
     }
 
-//Sgahana's test
+
+
+
+
+
+//Shahana's test
+    
     @Test (groups = {"newTest"})
     public void successfulMoveToCruisesPage() {
     	CruisesPage cp = new CruisesPage();
@@ -483,18 +491,21 @@ cr.reserveButton2.click(); //Switched handles and landing on Car Rental Payment 
     }
     
     
+  //Saha's test 
     
-//	@Test //Saha's test
-//    
-//	public void successfulMoveToHotelsPage()  {
-//		
-//		HotelsBookingPage hpg = new HotelsBookingPage();
-//		
-//		hpg.verifyLandingHotelsPage();
-//		
-//		hpg.searchHotelIstanbul();
-//	}
-//
+	@Test (groups = {"newTest"})
+    
+	public void successfulMoveToHotelsPage()  {
+		
+		HotelsBookingPage hpg = new HotelsBookingPage();
+		
+		hpg.verifyLandingHotelsPage();
+		
+		hpg.searchHotelIstanbul();
+	}
+
+	
+	
 }
 
 
