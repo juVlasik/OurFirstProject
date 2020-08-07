@@ -5,8 +5,13 @@
     <classes>
       <class name="tests.MobilePageTest">
         <methods>
+<<<<<<< HEAD
           <include name="mobileTabTest"/>
           <include name="tearDownMethod"/>
+=======
+          <include name="travelInspirationlinks"/>
+          <include name="tearDownSuite"/>
+>>>>>>> 03e1d5462c35d9781890691dcca8f8077338318f
           <include name="setUpMethod"/>
         </methods>
       </class> <!-- tests.MobilePageTest -->
