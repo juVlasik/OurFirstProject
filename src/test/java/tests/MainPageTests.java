@@ -32,6 +32,7 @@ import com.github.javafaker.Faker;
 
 import pages.BookingFlightPage;
 import pages.CarRentalPage;
+import pages.CruisesPage;
 import pages.HotelsBookingPage;
 import pages.MainPage;
 import pages.ThingsToDoPage;
@@ -465,9 +466,24 @@ cr.reserveButton2.click(); //Switched handles and landing on Car Rental Payment 
 		};
     }
 
+//Sgahana's test
+    @Test (groups = {"newTest"})
+    public void successfulMoveToCruisesPage() {
+    	CruisesPage cp = new CruisesPage();
+    	cp.BookCruises();
+    	
+    	BrowserUtilities.waitFor(5);
+    	
+    	String actual = Driver.getDriver().getTitle();
+    	BrowserUtilities.waitFor(5);
+    	String expected = "Alaska Cruises | Travelocity";
+    	
+    	assertEquals(actual, expected);
 
-
-	
+    }
+    
+    
+    
 //	@Test //Saha's test
 //    
 //	public void successfulMoveToHotelsPage()  {

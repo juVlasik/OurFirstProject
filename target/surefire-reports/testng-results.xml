@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" ignored="0" total="10" passed="7">
+<testng-results skipped="0" failed="1" ignored="5" total="10" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="395733" started-at="2020-08-07T00:56:37 PDT" finished-at="2020-08-07T01:03:12 PDT">
+  <suite name="Suite" duration-ms="286984" started-at="2020-08-07T11:57:10 PDT" finished-at="2020-08-07T12:01:57 PDT">
     <groups>
       <group name="newTest">
-        <method signature="MainPageTests.carRentPaymentPageVerification()[pri:0, instance:tests.MainPageTests@4fcd19b3]" name="carRentPaymentPageVerification" class="tests.MainPageTests"/>
-        <method signature="MainPageTests.fcarRentPaymentPageWithdataProvider(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.MainPageTests@4fcd19b3]" name="fcarRentPaymentPageWithdataProvider" class="tests.MainPageTests"/>
-        <method signature="MainPageTests.reserveAFlightButtonCheck()[pri:0, instance:tests.MainPageTests@4fcd19b3]" name="reserveAFlightButtonCheck" class="tests.MainPageTests"/>
-        <method signature="MainPageTests.successfulMoveToThingsToDoPage()[pri:0, instance:tests.MainPageTests@4fcd19b3]" name="successfulMoveToThingsToDoPage" class="tests.MainPageTests"/>
-        <method signature="MainPageTests.travelInspirationlinks()[pri:0, instance:tests.MainPageTests@4fcd19b3]" name="travelInspirationlinks" class="tests.MainPageTests"/>
+        <method signature="MainPageTests.carRentPaymentPageVerification()[pri:0, instance:tests.MainPageTests@b3d7190]" name="carRentPaymentPageVerification" class="tests.MainPageTests"/>
+        <method signature="MainPageTests.fcarRentPaymentPageWithdataProvider(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.MainPageTests@b3d7190]" name="fcarRentPaymentPageWithdataProvider" class="tests.MainPageTests"/>
+        <method signature="MainPageTests.reserveAFlightButtonCheck()[pri:0, instance:tests.MainPageTests@b3d7190]" name="reserveAFlightButtonCheck" class="tests.MainPageTests"/>
+        <method signature="MainPageTests.successfulMoveToThingsToDoPage()[pri:0, instance:tests.MainPageTests@b3d7190]" name="successfulMoveToThingsToDoPage" class="tests.MainPageTests"/>
+        <method signature="MainPageTests.travelInspirationlinks()[pri:0, instance:tests.MainPageTests@b3d7190]" name="travelInspirationlinks" class="tests.MainPageTests"/>
       </group> <!-- newTest -->
     </groups>
-    <test name="Test" duration-ms="395733" started-at="2020-08-07T00:56:37 PDT" finished-at="2020-08-07T01:03:12 PDT">
+    <test name="Group Test" duration-ms="286984" started-at="2020-08-07T11:57:10 PDT" finished-at="2020-08-07T12:01:57 PDT">
       <class name="tests.MainPageTests">
-        <test-method status="PASS" signature="setUpMethod(java.lang.String)[pri:0, instance:tests.MainPageTests@4fcd19b3]" name="setUpMethod" is-config="true" duration-ms="8176" started-at="2020-08-07T00:56:37 PDT" finished-at="2020-08-07T00:56:45 PDT">
+        <test-method status="PASS" signature="setUpMethod(java.lang.String)[pri:0, instance:tests.MainPageTests@b3d7190]" name="setUpMethod" is-config="true" duration-ms="8852" started-at="2020-08-07T11:57:10 PDT" finished-at="2020-08-07T11:57:19 PDT">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -23,121 +23,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method status="FAIL" signature="bookAFlightTest1()[pri:0, instance:tests.MainPageTests@4fcd19b3]" name="bookAFlightTest1" duration-ms="26196" started-at="2020-08-07T00:56:45 PDT" finished-at="2020-08-07T00:57:11 PDT">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//button[@class='btn-secondary btn-action t-select-btn'])[1]"}
-  (Session info: chrome=84.0.4147.105)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-H38VGSI7', ip: '192.168.0.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\ardil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56800}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 3fabe92a13e27db2a0834c257dca01f7
-*** Element info: {Using=xpath, value=(//button[@class='btn-secondary btn-action t-select-btn'])[1]}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//button[@class='btn-secondary btn-action t-select-btn'])[1]"}
-  (Session info: chrome=84.0.4147.105)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-H38VGSI7', ip: '192.168.0.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\ardil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56800}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 3fabe92a13e27db2a0834c257dca01f7
-*** Element info: {Using=xpath, value=(//button[@class='btn-secondary btn-action t-select-btn'])[1]}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy11.click(Unknown Source)
-at tests.MainPageTests.bookAFlightTest1(MainPageTests.java:175)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1259)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bookAFlightTest1 -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MainPageTests@4fcd19b3]" name="tearDownMethod" is-config="true" duration-ms="656" started-at="2020-08-07T00:57:11 PDT" finished-at="2020-08-07T00:57:12 PDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=bookAFlightTest1 status=FAILURE method=MainPageTests.bookAFlightTest1()[pri:0, instance:tests.MainPageTests@4fcd19b3] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="setUpMethod(java.lang.String)[pri:0, instance:tests.MainPageTests@4fcd19b3]" name="setUpMethod" is-config="true" duration-ms="6736" started-at="2020-08-07T00:57:12 PDT" finished-at="2020-08-07T00:57:19 PDT">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method status="PASS" signature="carRentPaymentPageVerification()[pri:0, instance:tests.MainPageTests@4fcd19b3]" name="carRentPaymentPageVerification" duration-ms="27241" started-at="2020-08-07T00:57:19 PDT" finished-at="2020-08-07T00:57:46 PDT">
+        <test-method status="PASS" signature="carRentPaymentPageVerification()[pri:0, instance:tests.MainPageTests@b3d7190]" name="carRentPaymentPageVerification" duration-ms="29759" started-at="2020-08-07T11:57:19 PDT" finished-at="2020-08-07T11:57:49 PDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- carRentPaymentPageVerification -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MainPageTests@4fcd19b3]" name="tearDownMethod" is-config="true" duration-ms="678" started-at="2020-08-07T00:57:46 PDT" finished-at="2020-08-07T00:57:46 PDT">
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MainPageTests@b3d7190]" name="tearDownMethod" is-config="true" duration-ms="815" started-at="2020-08-07T11:57:49 PDT" finished-at="2020-08-07T11:57:50 PDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=carRentPaymentPageVerification status=SUCCESS method=MainPageTests.carRentPaymentPageVerification()[pri:0, instance:tests.MainPageTests@4fcd19b3] output={null}]]]>
+                <![CDATA[[TestResult name=carRentPaymentPageVerification status=SUCCESS method=MainPageTests.carRentPaymentPageVerification()[pri:0, instance:tests.MainPageTests@b3d7190] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="setUpMethod(java.lang.String)[pri:0, instance:tests.MainPageTests@4fcd19b3]" name="setUpMethod" is-config="true" duration-ms="7257" started-at="2020-08-07T00:57:46 PDT" finished-at="2020-08-07T00:57:54 PDT">
+        <test-method status="PASS" signature="setUpMethod(java.lang.String)[pri:0, instance:tests.MainPageTests@b3d7190]" name="setUpMethod" is-config="true" duration-ms="7252" started-at="2020-08-07T11:57:50 PDT" finished-at="2020-08-07T11:57:57 PDT">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -146,31 +47,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method status="PASS" signature="checkCarRentalPricesOrder1()[pri:0, instance:tests.MainPageTests@4fcd19b3]" name="checkCarRentalPricesOrder1" duration-ms="16806" started-at="2020-08-07T00:57:54 PDT" finished-at="2020-08-07T00:58:11 PDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkCarRentalPricesOrder1 -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MainPageTests@4fcd19b3]" name="tearDownMethod" is-config="true" duration-ms="667" started-at="2020-08-07T00:58:11 PDT" finished-at="2020-08-07T00:58:11 PDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=checkCarRentalPricesOrder1 status=SUCCESS method=MainPageTests.checkCarRentalPricesOrder1()[pri:0, instance:tests.MainPageTests@4fcd19b3] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="setUpMethod(java.lang.String)[pri:0, instance:tests.MainPageTests@4fcd19b3]" name="setUpMethod" is-config="true" duration-ms="6931" started-at="2020-08-07T00:58:11 PDT" finished-at="2020-08-07T00:58:18 PDT">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method status="PASS" signature="fcarRentPaymentPageWithdataProvider(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.MainPageTests@4fcd19b3]" name="fcarRentPaymentPageWithdataProvider" duration-ms="51448" started-at="2020-08-07T00:58:18 PDT" data-provider="car booking info" finished-at="2020-08-07T00:59:10 PDT">
+        <test-method status="PASS" signature="fcarRentPaymentPageWithdataProvider(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.MainPageTests@b3d7190]" name="fcarRentPaymentPageWithdataProvider" duration-ms="51192" started-at="2020-08-07T11:57:57 PDT" data-provider="car booking info" finished-at="2020-08-07T11:58:48 PDT">
           <params>
             <param index="0">
               <value>
@@ -201,18 +78,18 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fcarRentPaymentPageWithdataProvider -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MainPageTests@4fcd19b3]" name="tearDownMethod" is-config="true" duration-ms="702" started-at="2020-08-07T00:59:10 PDT" finished-at="2020-08-07T00:59:10 PDT">
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MainPageTests@b3d7190]" name="tearDownMethod" is-config="true" duration-ms="804" started-at="2020-08-07T11:58:48 PDT" finished-at="2020-08-07T11:58:49 PDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=fcarRentPaymentPageWithdataProvider status=SUCCESS method=MainPageTests.fcarRentPaymentPageWithdataProvider(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.MainPageTests@4fcd19b3] output={null}]]]>
+                <![CDATA[[TestResult name=fcarRentPaymentPageWithdataProvider status=SUCCESS method=MainPageTests.fcarRentPaymentPageWithdataProvider(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.MainPageTests@b3d7190] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="setUpMethod(java.lang.String)[pri:0, instance:tests.MainPageTests@4fcd19b3]" name="setUpMethod" is-config="true" duration-ms="6967" started-at="2020-08-07T00:59:10 PDT" finished-at="2020-08-07T00:59:17 PDT">
+        <test-method status="PASS" signature="setUpMethod(java.lang.String)[pri:0, instance:tests.MainPageTests@b3d7190]" name="setUpMethod" is-config="true" duration-ms="7529" started-at="2020-08-07T11:58:49 PDT" finished-at="2020-08-07T11:58:57 PDT">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -221,31 +98,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method status="PASS" signature="negativeLogin2()[pri:0, instance:tests.MainPageTests@4fcd19b3]" name="negativeLogin2" duration-ms="3137" started-at="2020-08-07T00:59:17 PDT" finished-at="2020-08-07T00:59:20 PDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- negativeLogin2 -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MainPageTests@4fcd19b3]" name="tearDownMethod" is-config="true" duration-ms="627" started-at="2020-08-07T00:59:20 PDT" finished-at="2020-08-07T00:59:21 PDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=negativeLogin2 status=SUCCESS method=MainPageTests.negativeLogin2()[pri:0, instance:tests.MainPageTests@4fcd19b3] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="setUpMethod(java.lang.String)[pri:0, instance:tests.MainPageTests@4fcd19b3]" name="setUpMethod" is-config="true" duration-ms="6779" started-at="2020-08-07T00:59:21 PDT" finished-at="2020-08-07T00:59:28 PDT">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method status="FAIL" signature="reserveAFlightButtonCheck()[pri:0, instance:tests.MainPageTests@4fcd19b3]" name="reserveAFlightButtonCheck" duration-ms="56996" started-at="2020-08-07T00:59:28 PDT" finished-at="2020-08-07T01:00:25 PDT">
+        <test-method status="FAIL" signature="reserveAFlightButtonCheck()[pri:0, instance:tests.MainPageTests@b3d7190]" name="reserveAFlightButtonCheck" duration-ms="69566" started-at="2020-08-07T11:58:57 PDT" finished-at="2020-08-07T12:00:06 PDT">
           <exception class="org.openqa.selenium.json.JsonException">
             <message>
               <![CDATA[java.lang.reflect.InvocationTargetException
@@ -332,8 +185,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-H38VGSI7', ip: '192.168.0.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\ardil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57911}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: cf9ad1402258af91826005282c2c5a32
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\ardil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61081}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9b5cd2310684e1af76501a297e5e0c48
 *** Element info: {Using=xpath, value=//button[@id='bookButton']}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -363,18 +216,18 @@ at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:84)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reserveAFlightButtonCheck -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MainPageTests@4fcd19b3]" name="tearDownMethod" is-config="true" duration-ms="712" started-at="2020-08-07T01:00:25 PDT" finished-at="2020-08-07T01:00:26 PDT">
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MainPageTests@b3d7190]" name="tearDownMethod" is-config="true" duration-ms="818" started-at="2020-08-07T12:00:06 PDT" finished-at="2020-08-07T12:00:07 PDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=reserveAFlightButtonCheck status=FAILURE method=MainPageTests.reserveAFlightButtonCheck()[pri:0, instance:tests.MainPageTests@4fcd19b3] output={null}]]]>
+                <![CDATA[[TestResult name=reserveAFlightButtonCheck status=FAILURE method=MainPageTests.reserveAFlightButtonCheck()[pri:0, instance:tests.MainPageTests@b3d7190] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="setUpMethod(java.lang.String)[pri:0, instance:tests.MainPageTests@4fcd19b3]" name="setUpMethod" is-config="true" duration-ms="6859" started-at="2020-08-07T01:00:26 PDT" finished-at="2020-08-07T01:00:32 PDT">
+        <test-method status="PASS" signature="setUpMethod(java.lang.String)[pri:0, instance:tests.MainPageTests@b3d7190]" name="setUpMethod" is-config="true" duration-ms="6877" started-at="2020-08-07T12:00:07 PDT" finished-at="2020-08-07T12:00:14 PDT">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -383,70 +236,22 @@ at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:84)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method status="PASS" signature="successfulMoveToCarRenetalPage()[pri:0, instance:tests.MainPageTests@4fcd19b3]" name="successfulMoveToCarRenetalPage" duration-ms="11261" started-at="2020-08-07T01:00:32 PDT" finished-at="2020-08-07T01:00:44 PDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- successfulMoveToCarRenetalPage -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MainPageTests@4fcd19b3]" name="tearDownMethod" is-config="true" duration-ms="646" started-at="2020-08-07T01:00:44 PDT" finished-at="2020-08-07T01:00:44 PDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=successfulMoveToCarRenetalPage status=SUCCESS method=MainPageTests.successfulMoveToCarRenetalPage()[pri:0, instance:tests.MainPageTests@4fcd19b3] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="setUpMethod(java.lang.String)[pri:0, instance:tests.MainPageTests@4fcd19b3]" name="setUpMethod" is-config="true" duration-ms="6767" started-at="2020-08-07T01:00:44 PDT" finished-at="2020-08-07T01:00:51 PDT">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method status="PASS" signature="successfulMoveToFlightsPage()[pri:0, instance:tests.MainPageTests@4fcd19b3]" name="successfulMoveToFlightsPage" duration-ms="24776" started-at="2020-08-07T01:00:51 PDT" finished-at="2020-08-07T01:01:16 PDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- successfulMoveToFlightsPage -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MainPageTests@4fcd19b3]" name="tearDownMethod" is-config="true" duration-ms="667" started-at="2020-08-07T01:01:16 PDT" finished-at="2020-08-07T01:01:16 PDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=successfulMoveToFlightsPage status=SUCCESS method=MainPageTests.successfulMoveToFlightsPage()[pri:0, instance:tests.MainPageTests@4fcd19b3] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="setUpMethod(java.lang.String)[pri:0, instance:tests.MainPageTests@4fcd19b3]" name="setUpMethod" is-config="true" duration-ms="7380" started-at="2020-08-07T01:01:16 PDT" finished-at="2020-08-07T01:01:24 PDT">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method status="PASS" signature="successfulMoveToThingsToDoPage()[pri:0, instance:tests.MainPageTests@4fcd19b3]" name="successfulMoveToThingsToDoPage" duration-ms="8966" started-at="2020-08-07T01:01:24 PDT" finished-at="2020-08-07T01:01:33 PDT">
+        <test-method status="PASS" signature="successfulMoveToThingsToDoPage()[pri:0, instance:tests.MainPageTests@b3d7190]" name="successfulMoveToThingsToDoPage" duration-ms="6341" started-at="2020-08-07T12:00:14 PDT" finished-at="2020-08-07T12:00:20 PDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- successfulMoveToThingsToDoPage -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MainPageTests@4fcd19b3]" name="tearDownMethod" is-config="true" duration-ms="650" started-at="2020-08-07T01:01:33 PDT" finished-at="2020-08-07T01:01:33 PDT">
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MainPageTests@b3d7190]" name="tearDownMethod" is-config="true" duration-ms="687" started-at="2020-08-07T12:00:20 PDT" finished-at="2020-08-07T12:00:21 PDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=successfulMoveToThingsToDoPage status=SUCCESS method=MainPageTests.successfulMoveToThingsToDoPage()[pri:0, instance:tests.MainPageTests@4fcd19b3] output={null}]]]>
+                <![CDATA[[TestResult name=successfulMoveToThingsToDoPage status=SUCCESS method=MainPageTests.successfulMoveToThingsToDoPage()[pri:0, instance:tests.MainPageTests@b3d7190] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="setUpMethod(java.lang.String)[pri:0, instance:tests.MainPageTests@4fcd19b3]" name="setUpMethod" is-config="true" duration-ms="6704" started-at="2020-08-07T01:01:33 PDT" finished-at="2020-08-07T01:01:40 PDT">
+        <test-method status="PASS" signature="setUpMethod(java.lang.String)[pri:0, instance:tests.MainPageTests@b3d7190]" name="setUpMethod" is-config="true" duration-ms="6937" started-at="2020-08-07T12:00:21 PDT" finished-at="2020-08-07T12:00:28 PDT">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -455,61 +260,15 @@ at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:84)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method status="FAIL" signature="travelInspirationlinks()[pri:0, instance:tests.MainPageTests@4fcd19b3]" name="travelInspirationlinks" duration-ms="91571" started-at="2020-08-07T01:01:40 PDT" finished-at="2020-08-07T01:03:12 PDT">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Lists differ at element [0]: Hit the Roam Sale | Travelocity != 8 ways to ease back into travel—when the time comes | Inspire | Travelocity.com expected [Hit the Roam Sale | Travelocity] but found [8 ways to ease back into travel—when the time comes | Inspire | Travelocity.com]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Lists differ at element [0]: Hit the Roam Sale | Travelocity != 8 ways to ease back into travel—when the time comes | Inspire | Travelocity.com expected [Hit the Roam Sale | Travelocity] but found [8 ways to ease back into travel—when the time comes | Inspire | Travelocity.com]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-at org.testng.Assert.assertEquals(Assert.java:1031)
-at org.testng.Assert.assertEquals(Assert.java:993)
-at tests.MainPageTests.travelInspirationlinks(MainPageTests.java:273)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1259)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="travelInspirationlinks()[pri:0, instance:tests.MainPageTests@b3d7190]" name="travelInspirationlinks" duration-ms="88651" started-at="2020-08-07T12:00:28 PDT" finished-at="2020-08-07T12:01:56 PDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- travelInspirationlinks -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MainPageTests@4fcd19b3]" name="tearDownMethod" is-config="true" duration-ms="722" started-at="2020-08-07T01:03:12 PDT" finished-at="2020-08-07T01:03:12 PDT">
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MainPageTests@b3d7190]" name="tearDownMethod" is-config="true" duration-ms="839" started-at="2020-08-07T12:01:56 PDT" finished-at="2020-08-07T12:01:57 PDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=travelInspirationlinks status=FAILURE method=MainPageTests.travelInspirationlinks()[pri:0, instance:tests.MainPageTests@4fcd19b3] output={null}]]]>
+                <![CDATA[[TestResult name=travelInspirationlinks status=SUCCESS method=MainPageTests.travelInspirationlinks()[pri:0, instance:tests.MainPageTests@b3d7190] output={null}]]]>
               </value>
             </param>
           </params>
@@ -517,6 +276,6 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
       </class> <!-- tests.MainPageTests -->
-    </test> <!-- Test -->
+    </test> <!-- Group Test -->
   </suite> <!-- Suite -->
 </testng-results>
