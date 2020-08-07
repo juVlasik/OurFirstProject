@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Suite">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
+                    <span class="method-stats">10 methods, 3 failed,   7 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,7 +102,17 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.MainPageTests" hash-for-method="flightPaymentTest">flightPaymentTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.MainPageTests" hash-for-method="bookAFlightTest1">bookAFlightTest1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.MainPageTests" hash-for-method="reserveAFlightButtonCheck">reserveAFlightButtonCheck</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.MainPageTests" hash-for-method="travelInspirationlinks">travelInspirationlinks</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -116,7 +126,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.MainPageTests" hash-for-method="bookAFlightTest1">bookAFlightTest1</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.MainPageTests" hash-for-method="carRentPaymentPageVerification">carRentPaymentPageVerification</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -126,12 +136,12 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.MainPageTests" hash-for-method="negativeLogin2">negativeLogin2</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.MainPageTests" hash-for-method="fcarRentPaymentPageWithdataProvider(John Doe, 5711234567, jdoe.11@gmail.com, jdoejdoe, jdoejdoe)">fcarRentPaymentPageWithdataProvider(John Doe, 5711234567, jdoe.11@gmail.com, jdoejdoe, jdoejdoe)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.MainPageTests" hash-for-method="reserveAFlightButtonCheck">reserveAFlightButtonCheck</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.MainPageTests" hash-for-method="negativeLogin2">negativeLogin2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -146,7 +156,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.MainPageTests" hash-for-method="travelInspirationlinks">travelInspirationlinks</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.MainPageTests" hash-for-method="successfulMoveToThingsToDoPage">successfulMoveToThingsToDoPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -169,17 +179,86 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="flightPaymentTest">
-                  </a> <!-- flightPaymentTest -->
-                  <span class="method-name">flightPaymentTest</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;bookButton&apos;]&quot;}
+                  <a name="bookAFlightTest1">
+                  </a> <!-- bookAFlightTest1 -->
+                  <span class="method-name">bookAFlightTest1</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//button[@class=&apos;btn-secondary btn-action t-select-btn&apos;])[1]&quot;}
   (Session info: chrome=84.0.4147.105)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;LAPTOP-H38VGSI7&apos;, ip: &apos;192.168.1.254&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
+System info: host: &apos;LAPTOP-H38VGSI7&apos;, ip: &apos;192.168.0.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\ardil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58769}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 0d1083501e9751600fb8fcec8116cd4a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\ardil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56800}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 3fabe92a13e27db2a0834c257dca01f7
+*** Element info: {Using=xpath, value=(//button[@class=&apos;btn-secondary btn-action t-select-btn&apos;])[1]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at tests.MainPageTests.bookAFlightTest1(MainPageTests.java:175)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reserveAFlightButtonCheck">
+                  </a> <!-- reserveAFlightButtonCheck -->
+                  <span class="method-name">reserveAFlightButtonCheck</span>
+                  <div class="stack-trace">org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-H38VGSI7&apos;, ip: &apos;192.168.0.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:332)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:155)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.lambda$null$21(JsonOutput.java:168)
+	at java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:608)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:168)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.lambda$null$23(JsonOutput.java:177)
+	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:65)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:176)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:264)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:255)
+	at org.openqa.selenium.json.Json.toJson(Json.java:42)
+	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:227)
+	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:117)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:152)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:595)
+	at tests.MainPageTests.reserveAFlightButtonCheck(MainPageTests.java:387)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-H38VGSI7&apos;, ip: &apos;192.168.0.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: driver.version: RemoteWebDriver
+		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:279)
+		at org.openqa.selenium.json.Json.toJson(Json.java:44)
+		... 41 more
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:328)
+	... 53 more
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;bookButton&apos;]&quot;}
+  (Session info: chrome=84.0.4147.105)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-H38VGSI7&apos;, ip: &apos;192.168.0.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\ardil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57911}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: cf9ad1402258af91826005282c2c5a32
 *** Element info: {Using=xpath, value=//button[@id=&apos;bookButton&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -193,17 +272,23 @@ Session ID: 0d1083501e9751600fb8fcec8116cd4a
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy10.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
-	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
-	at tests.MainPageTests.flightPaymentTest(MainPageTests.java:444)
+	at com.sun.proxy.$Proxy11.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:204)
+	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:155)
+	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:75)
+	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:84)
+	... 58 more
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="travelInspirationlinks">
+                  </a> <!-- travelInspirationlinks -->
+                  <span class="method-name">travelInspirationlinks</span>
+                  <div class="stack-trace">java.lang.AssertionError: Lists differ at element [0]: Hit the Roam Sale | Travelocity != 8 ways to ease back into travel—when the time comes | Inspire | Travelocity.com expected [Hit the Roam Sale | Travelocity] but found [8 ways to ease back into travel—when the time comes | Inspire | Travelocity.com]
+	at tests.MainPageTests.travelInspirationlinks(MainPageTests.java:273)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
 ... Removed 35 stack frames
 </div> <!-- stack-trace -->
@@ -219,9 +304,9 @@ Session ID: 0d1083501e9751600fb8fcec8116cd4a
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="bookAFlightTest1">
-                  </a> <!-- bookAFlightTest1 -->
-                  <span class="method-name">bookAFlightTest1</span>
+                  <a name="carRentPaymentPageVerification">
+                  </a> <!-- carRentPaymentPageVerification -->
+                  <span class="method-name">carRentPaymentPageVerification</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -233,16 +318,17 @@ Session ID: 0d1083501e9751600fb8fcec8116cd4a
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="negativeLogin2">
-                  </a> <!-- negativeLogin2 -->
-                  <span class="method-name">negativeLogin2</span>
+                  <a name="fcarRentPaymentPageWithdataProvider(John Doe, 5711234567, jdoe.11@gmail.com, jdoejdoe, jdoejdoe)">
+                  </a> <!-- fcarRentPaymentPageWithdataProvider(John Doe, 5711234567, jdoe.11@gmail.com, jdoejdoe, jdoejdoe) -->
+                  <span class="method-name">fcarRentPaymentPageWithdataProvider</span>
+                  <span class="parameters">(John Doe, 5711234567, jdoe.11@gmail.com, jdoejdoe, jdoejdoe)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="reserveAFlightButtonCheck">
-                  </a> <!-- reserveAFlightButtonCheck -->
-                  <span class="method-name">reserveAFlightButtonCheck</span>
+                  <a name="negativeLogin2">
+                  </a> <!-- negativeLogin2 -->
+                  <span class="method-name">negativeLogin2</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -261,9 +347,9 @@ Session ID: 0d1083501e9751600fb8fcec8116cd4a
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="travelInspirationlinks">
-                  </a> <!-- travelInspirationlinks -->
-                  <span class="method-name">travelInspirationlinks</span>
+                  <a name="successfulMoveToThingsToDoPage">
+                  </a> <!-- successfulMoveToThingsToDoPage -->
+                  <span class="method-name">successfulMoveToThingsToDoPage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -304,6 +390,30 @@ Session ID: 0d1083501e9751600fb8fcec8116cd4a
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">newTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">carRentPaymentPageVerification</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">fcarRentPaymentPageWithdataProvider</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">reserveAFlightButtonCheck</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">successfulMoveToThingsToDoPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">travelInspirationlinks</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -320,44 +430,52 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'travelInspirationlinks')
 data.setCell(0, 2, 'tests.MainPageTests')
-data.setCell(0, 3, 72848);
+data.setCell(0, 3, 91571);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'flightPaymentTest')
+data.setCell(1, 1, 'reserveAFlightButtonCheck')
 data.setCell(1, 2, 'tests.MainPageTests')
-data.setCell(1, 3, 53556);
+data.setCell(1, 3, 56996);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'reserveAFlightButtonCheck')
+data.setCell(2, 1, 'fcarRentPaymentPageWithdataProvider')
 data.setCell(2, 2, 'tests.MainPageTests')
-data.setCell(2, 3, 53322);
+data.setCell(2, 3, 51448);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'bookAFlightTest1')
+data.setCell(3, 1, 'carRentPaymentPageVerification')
 data.setCell(3, 2, 'tests.MainPageTests')
-data.setCell(3, 3, 32628);
+data.setCell(3, 3, 27241);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'successfulMoveToFlightsPage')
+data.setCell(4, 1, 'bookAFlightTest1')
 data.setCell(4, 2, 'tests.MainPageTests')
-data.setCell(4, 3, 25216);
+data.setCell(4, 3, 26196);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'checkCarRentalPricesOrder1')
+data.setCell(5, 1, 'successfulMoveToFlightsPage')
 data.setCell(5, 2, 'tests.MainPageTests')
-data.setCell(5, 3, 17784);
+data.setCell(5, 3, 24776);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'successfulMoveToCarRenetalPage')
+data.setCell(6, 1, 'checkCarRentalPricesOrder1')
 data.setCell(6, 2, 'tests.MainPageTests')
-data.setCell(6, 3, 10966);
+data.setCell(6, 3, 16806);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'negativeLogin2')
+data.setCell(7, 1, 'successfulMoveToCarRenetalPage')
 data.setCell(7, 2, 'tests.MainPageTests')
-data.setCell(7, 3, 3430);
+data.setCell(7, 3, 11261);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'successfulMoveToThingsToDoPage')
+data.setCell(8, 2, 'tests.MainPageTests')
+data.setCell(8, 3, 8966);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'negativeLogin2')
+data.setCell(9, 2, 'tests.MainPageTests')
+data.setCell(9, 3, 3137);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -389,98 +507,126 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">successfulMoveToCarRenetalPage</span>
-                <span class="method-start">7363 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">bookAFlightTest1</span>
+                <span class="method-start">8177 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDownMethod([TestResult name=successfulMoveToCarRenetalPage status=SUCCESS method=MainPageTests.successfulMoveTo...)</span>
-                <span class="method-start">18331 ms</span>
+                <span class="method-name">tearDownMethod([TestResult name=bookAFlightTest1 status=FAILURE method=MainPageTests.bookAFlightTest1()[pri:0, inst...)</span>
+                <span class="method-start">34384 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUpMethod(null)</span>
-                <span class="method-start">19036 ms</span>
+                <span class="method-start">35041 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">successfulMoveToFlightsPage</span>
-                <span class="method-start">25701 ms</span>
+                <span class="method-name">carRentPaymentPageVerification</span>
+                <span class="method-start">41777 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDownMethod([TestResult name=successfulMoveToFlightsPage status=SUCCESS method=MainPageTests.successfulMoveToFli...)</span>
-                <span class="method-start">50918 ms</span>
+                <span class="method-name">tearDownMethod([TestResult name=carRentPaymentPageVerification status=SUCCESS method=MainPageTests.carRentPaymentPa...)</span>
+                <span class="method-start">69018 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUpMethod(null)</span>
-                <span class="method-start">51616 ms</span>
+                <span class="method-start">69697 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkCarRentalPricesOrder1</span>
-                <span class="method-start">58093 ms</span>
+                <span class="method-start">76954 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownMethod([TestResult name=checkCarRentalPricesOrder1 status=SUCCESS method=MainPageTests.checkCarRentalPrices...)</span>
-                <span class="method-start">75878 ms</span>
+                <span class="method-start">93760 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUpMethod(null)</span>
-                <span class="method-start">76569 ms</span>
+                <span class="method-start">94432 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">bookAFlightTest1</span>
-                <span class="method-start">83068 ms</span>
+                <span class="method-name">fcarRentPaymentPageWithdataProvider(John Doe, 5711234567, jdoe.11@gmail.com, jdoejdoe, jdoejdoe)</span>
+                <span class="method-start">101363 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDownMethod([TestResult name=bookAFlightTest1 status=SUCCESS method=MainPageTests.bookAFlightTest1()[pri:4, inst...)</span>
-                <span class="method-start">115697 ms</span>
+                <span class="method-name">tearDownMethod([TestResult name=fcarRentPaymentPageWithdataProvider status=SUCCESS method=MainPageTests.fcarRentPay...)</span>
+                <span class="method-start">152811 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUpMethod(null)</span>
-                <span class="method-start">116412 ms</span>
+                <span class="method-start">153514 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">negativeLogin2</span>
-                <span class="method-start">123121 ms</span>
+                <span class="method-start">160481 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDownMethod([TestResult name=negativeLogin2 status=SUCCESS method=MainPageTests.negativeLogin2()[pri:5, instance...)</span>
-                <span class="method-start">126551 ms</span>
+                <span class="method-name">tearDownMethod([TestResult name=negativeLogin2 status=SUCCESS method=MainPageTests.negativeLogin2()[pri:0, instance...)</span>
+                <span class="method-start">163619 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUpMethod(null)</span>
-                <span class="method-start">127222 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">travelInspirationlinks</span>
-                <span class="method-start">133783 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownMethod([TestResult name=travelInspirationlinks status=SUCCESS method=MainPageTests.travelInspirationlinks()...)</span>
-                <span class="method-start">206631 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpMethod(null)</span>
-                <span class="method-start">207426 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">reserveAFlightButtonCheck</span>
-                <span class="method-start">214305 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownMethod([TestResult name=reserveAFlightButtonCheck status=SUCCESS method=MainPageTests.reserveAFlightButtonC...)</span>
-                <span class="method-start">267627 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpMethod(null)</span>
-                <span class="method-start">268416 ms</span>
+                <span class="method-start">164247 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">flightPaymentTest</span>
-                <span class="method-start">275232 ms</span>
+                <span class="method-name">reserveAFlightButtonCheck</span>
+                <span class="method-start">171026 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDownMethod([TestResult name=flightPaymentTest status=FAILURE method=MainPageTests.flightPaymentTest()[pri:9, in...)</span>
-                <span class="method-start">328795 ms</span>
+                <span class="method-name">tearDownMethod([TestResult name=reserveAFlightButtonCheck status=FAILURE method=MainPageTests.reserveAFlightButtonC...)</span>
+                <span class="method-start">228023 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(null)</span>
+                <span class="method-start">228736 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">successfulMoveToCarRenetalPage</span>
+                <span class="method-start">235596 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=successfulMoveToCarRenetalPage status=SUCCESS method=MainPageTests.successfulMoveTo...)</span>
+                <span class="method-start">246857 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(null)</span>
+                <span class="method-start">247503 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">successfulMoveToFlightsPage</span>
+                <span class="method-start">254270 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=successfulMoveToFlightsPage status=SUCCESS method=MainPageTests.successfulMoveToFli...)</span>
+                <span class="method-start">279046 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(null)</span>
+                <span class="method-start">279714 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">successfulMoveToThingsToDoPage</span>
+                <span class="method-start">287094 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=successfulMoveToThingsToDoPage status=SUCCESS method=MainPageTests.successfulMoveTo...)</span>
+                <span class="method-start">296060 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod(null)</span>
+                <span class="method-start">296710 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">travelInspirationlinks</span>
+                <span class="method-start">303414 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod([TestResult name=travelInspirationlinks status=FAILURE method=MainPageTests.travelInspirationlinks()...)</span>
+                <span class="method-start">394986 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

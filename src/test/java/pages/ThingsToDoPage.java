@@ -17,7 +17,6 @@ public  ThingsToDoPage() {
 	}
 	
 
-
 @FindBy (xpath = "//button[@id='activity-start-date-btn']")
 public WebElement calStartDate;
 
@@ -38,7 +37,6 @@ public WebElement newOnTButton;
 
 @FindBy (xpath = "(//input[@name='sortRadioGroup'])[2]")
 public WebElement sortLToH;	
-
 
 
 

@@ -18,37 +18,37 @@ public  BookingFlightPage() {
 		
 	}
 
-	@FindBy (xpath = "//input[@id='airlineRowContainer_AF']")
-	public WebElement airfranceChBox;
-	 
-	@FindBy (xpath = "//tr[2]//td[@data-test-id='flexible-search-cell']")
-	public List<WebElement> flightPrices;
-	
-	@FindBy (xpath = "//select[@id='sortDropdown']")
-	public WebElement sortMenuButton;
-	
-	@FindBy (xpath = "//input[@value='Kyiv, Ukraine (IEV)']")
-	public WebElement arrivalAirport;
-	
-	@FindBy (xpath = "//input[@value='Washington, DC, United States (DCA)']")
-	public WebElement departureAirport;
-	
-	@FindBy (xpath = "//a[@data-click-handler='forcedChoiceNoThanks']")
-	public WebElement noThanksButton;
-	
-	@FindBy (id = "forcedChoiceNoThanks")
-	public WebElement noThanksButton2;
-	
-	@FindBy (xpath = "(//button[@class='btn-secondary btn-action t-select-btn'])[1]")
-	public WebElement selectButton;
-	
-	@FindBy (xpath = "//button[@id='bookButton']")
-	public WebElement contBookingButton;
-	
-	@FindBy (xpath = "//button[@id='flights-advanced-options-toggle']")
-	public WebElement showOptions;
-	
-	@FindBy (xpath = "//select[@id='adult-count']")
-	public WebElement selectAdultsNo;
-	
+@FindBy (xpath = "//input[@id='airlineRowContainer_AF']")
+public WebElement airfranceChBox;
+ 
+@FindBy (xpath = "//tr[2]//td[@data-test-id='flexible-search-cell']")
+public List<WebElement> flightPrices;
+
+@FindBy (xpath = "//select[@id='sortDropdown']")
+public WebElement sortMenuButton;
+
+@FindBy (xpath = "//input[@value='Kyiv, Ukraine (IEV)']")
+public WebElement arrivalAirport;
+
+@FindBy (xpath = "//input[@value='Washington, DC, United States (DCA)']")
+public WebElement departureAirport;
+
+@FindBy (xpath = "//a[@data-click-handler='forcedChoiceNoThanks']")
+public WebElement noThanksButton;
+
+@FindBy (id = "forcedChoiceNoThanks")
+public WebElement noThanksButton2;
+
+@FindBy (xpath = "(//button[@class='btn-secondary btn-action t-select-btn'])[1]")
+public WebElement selectButton;
+
+@FindBy (xpath = "//button[@id='bookButton']")
+public WebElement contBookingButton;
+
+@FindBy (xpath = "//button[@id='flights-advanced-options-toggle']")
+public WebElement showOptions;
+
+@FindBy (xpath = "//select[@id='adult-count']")
+public WebElement selectAdultsNo;
+
 }

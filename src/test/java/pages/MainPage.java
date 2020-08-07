@@ -11,6 +11,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import utilities.BrowserUtilities;
 import utilities.Driver;
@@ -24,7 +25,7 @@ public class MainPage {
 		 
 	}
 	
-        //Test case 6
+ //Test case 6
         
         @FindBy (xpath = "//figure[@class='image aspect-ratio16-9']")
         public List<WebElement> travelInspiration;
@@ -266,7 +267,7 @@ public class MainPage {
 	//Selection one adult
 		 
 		 Select s = new Select(adultNoButton);
-		 s.selectByValue("1");
+		 s.selectByValue("3");
 		
 		 js.executeScript("window.scrollBy(0,200)");
 //		 BrowserUtilities.waitFor(4);
@@ -281,5 +282,22 @@ public class MainPage {
 		 
 		
 }
+		
+		public void thingsToDoButtonTest() { 
+			
+		  
+		     
+			thingsToDoButton.click();
+			
+			activityDestButton.sendKeys("Colorado" + Keys.ENTER);
+			BrowserUtilities.waitFor(5);
+			
+			SoftAssert sa = new SoftAssert();
+			String expected = "Things to do in Colorado | Travelocity";
+			String actual = Driver.getDriver().getTitle();
+			
+			sa.assertEquals(actual, expected);
+			}
 }
+
         
