@@ -6,10 +6,14 @@
     
     <classes>
        <class name="tests.MainPageTests"/>
-       <class name="tests.CruisesTest"/>
-      <class name="tests.MobilePageTest"/>
+       <class name="tests.CruisesTests"/>
+      <class name="tests.MobilePageTests"/>
       <class name="tests.TravelDealsTests"/>
       <class name="tests.VacationRentalsTests"/>
+      <class name="tests.CarRentalPageTests"/>
+      <class name="tests.FlightBookingPageTests"/>
+      <class name="tests.LoginPageTests"/>
+      
     </classes>
    
     
