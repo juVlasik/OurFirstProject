@@ -13,8 +13,9 @@ import utilities.Driver;
 
 public class VacationRentalsTests extends TestBase {
 
+	//Annas's code
 	
-	@Test
+	@Test (groups = {"newTest"})
 	public void successfulMoveToVacationRentalsPage() throws Exception {
 		MainPage mp = new MainPage();
 		mp.VacationRentalsButton.click();
@@ -25,7 +26,7 @@ public class VacationRentalsTests extends TestBase {
 	}
 	
 	
-	@Test
+	@Test (groups = {"newTest"})
 	public void successfulRentalsSearch() throws Exception {
 		MainPage mp = new MainPage();
 		mp.VacationRentalsButton.click();

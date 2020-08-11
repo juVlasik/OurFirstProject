@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import pages.MainPage;
 
-public class MobilePageTest extends TestBase {
+public class MobilePageTests extends TestBase {
 
 	
 	

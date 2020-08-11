@@ -11,7 +11,9 @@ import utilities.BrowserUtilities;
 
 public class TravelDealsTests extends TestBase {
 	
-	@Test
+	//Anna's code
+	
+	@Test (groups = {"newTest"})
 	
 	public void succesfulMoveToTravelDealsPage () {
 		MainPage mp = new MainPage();
@@ -24,7 +26,7 @@ public class TravelDealsTests extends TestBase {
 	}
 	
 	
-	@Test 
+	@Test (groups = {"newTest"})
 	public void testTravelDealsOldPage () { //When clicking on Travel Deals, user is randomly re-directed to two different pages
 		MainPage mp = new MainPage();
 		mp.TravelDealsButton.click();
@@ -39,7 +41,7 @@ public class TravelDealsTests extends TestBase {
 
 
 	
-	@Test 
+	@Test (groups = {"newTest"})
 	public void testTravelDealsPageHotels () { //Check Hotel Only option + default room/travelers
 		MainPage mp = new MainPage();
 		mp.TravelDealsButton.click();
@@ -55,7 +57,7 @@ public class TravelDealsTests extends TestBase {
 	}
 	
 	
-	@Test 
+	@Test (groups = {"newTest"})
 	public void testTravelDealsPagePackges () { //Check Deals  option 
 		MainPage mp = new MainPage();
 		mp.TravelDealsButton.click();
