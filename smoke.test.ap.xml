@@ -6,7 +6,7 @@
   
   
     <classes>
-      <class name="tests.VacationRentalsTest"/>
+      <class name="tests.VacationRentalsTests"/>
     </classes>
     
     

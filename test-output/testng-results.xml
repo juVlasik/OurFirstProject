@@ -1,26 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="9" total="10" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="13434" started-at="2020-08-07T00:24:06 EDT" finished-at="2020-08-07T00:24:19 EDT">
-=======
-  <suite name="Default suite" duration-ms="82729" started-at="2020-08-07T01:14:15 PDT" finished-at="2020-08-07T01:15:38 PDT">
->>>>>>> 03e1d5462c35d9781890691dcca8f8077338318f
+  <suite name="Suite" duration-ms="56266" started-at="2020-08-07T19:15:27 EDT" finished-at="2020-08-07T19:16:23 EDT">
     <groups>
-      <group name="newTest">
-        <method signature="MainPageTests.travelInspirationlinks()[pri:0, instance:tests.MainPageTests@3e77a1ed]" name="travelInspirationlinks" class="tests.MainPageTests"/>
-      </group> <!-- newTest -->
     </groups>
-<<<<<<< HEAD
-    <test name="Default test" duration-ms="13434" started-at="2020-08-07T00:24:06 EDT" finished-at="2020-08-07T00:24:19 EDT">
-      <class name="tests.MobilePageTest">
-        <test-method status="PASS" signature="setUpMethod(java.lang.String)[pri:0, instance:tests.MobilePageTest@17776a8]" name="setUpMethod" is-config="true" duration-ms="7436" started-at="2020-08-07T00:24:06 EDT" finished-at="2020-08-07T00:24:13 EDT">
-=======
-    <test name="Default test" duration-ms="82729" started-at="2020-08-07T01:14:15 PDT" finished-at="2020-08-07T01:15:38 PDT">
-      <class name="tests.MainPageTests">
-        <test-method status="PASS" signature="setUpMethod(java.lang.String)[pri:0, instance:tests.MainPageTests@3e77a1ed]" name="setUpMethod" is-config="true" duration-ms="7795" started-at="2020-08-07T01:14:15 PDT" finished-at="2020-08-07T01:14:23 PDT">
->>>>>>> 03e1d5462c35d9781890691dcca8f8077338318f
+    <test name="Test" duration-ms="56266" started-at="2020-08-07T19:15:27 EDT" finished-at="2020-08-07T19:16:23 EDT">
+      <class name="tests.VacationRentalsTests">
+        <test-method status="PASS" signature="setUpMethod(java.lang.String)[pri:0, instance:tests.VacationRentalsTests@290dbf45]" name="setUpMethod" is-config="true" duration-ms="14260" started-at="2020-08-07T19:15:27 EDT" finished-at="2020-08-07T19:15:41 EDT">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -29,34 +16,46 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="mobileTabTest()[pri:0, instance:tests.MobilePageTest@17776a8]" name="mobileTabTest" duration-ms="5972" started-at="2020-08-07T00:24:13 EDT" finished-at="2020-08-07T00:24:19 EDT">
+        <test-method status="PASS" signature="successfulMoveToVacationRentalsPage()[pri:0, instance:tests.VacationRentalsTests@290dbf45]" name="successfulMoveToVacationRentalsPage" duration-ms="7648" started-at="2020-08-07T19:15:41 EDT" finished-at="2020-08-07T19:15:49 EDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- mobileTabTest -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MobilePageTest@17776a8]" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2020-08-07T00:24:19 EDT" finished-at="2020-08-07T00:24:19 EDT">
+        </test-method> <!-- successfulMoveToVacationRentalsPage -->
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.VacationRentalsTests@290dbf45]" name="tearDownMethod" is-config="true" duration-ms="1" started-at="2020-08-07T19:15:49 EDT" finished-at="2020-08-07T19:15:49 EDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=mobileTabTest status=SUCCESS method=MobilePageTest.mobileTabTest()[pri:0, instance:tests.MobilePageTest@17776a8] output={null}]]]>
-=======
-        <test-method status="PASS" signature="travelInspirationlinks()[pri:0, instance:tests.MainPageTests@3e77a1ed]" name="travelInspirationlinks" duration-ms="74145" started-at="2020-08-07T01:14:23 PDT" finished-at="2020-08-07T01:15:37 PDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- travelInspirationlinks -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MainPageTests@3e77a1ed]" name="tearDownMethod" is-config="true" duration-ms="753" started-at="2020-08-07T01:15:37 PDT" finished-at="2020-08-07T01:15:38 PDT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=travelInspirationlinks status=SUCCESS method=MainPageTests.travelInspirationlinks()[pri:0, instance:tests.MainPageTests@3e77a1ed] output={null}]]]>
->>>>>>> 03e1d5462c35d9781890691dcca8f8077338318f
+                <![CDATA[[TestResult name=successfulMoveToVacationRentalsPage status=SUCCESS method=VacationRentalsTests.successfulMoveToVacationRentalsPage()[pri:0, instance:tests.VacationRentalsTests@290dbf45] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-      </class> <!-- tests.MobilePageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method status="PASS" signature="setUpMethod(java.lang.String)[pri:0, instance:tests.VacationRentalsTests@290dbf45]" name="setUpMethod" is-config="true" duration-ms="1845" started-at="2020-08-07T19:15:49 EDT" finished-at="2020-08-07T19:15:51 EDT">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method status="PASS" signature="successfulRentalsSearch()[pri:0, instance:tests.VacationRentalsTests@290dbf45]" name="successfulRentalsSearch" duration-ms="32445" started-at="2020-08-07T19:15:51 EDT" finished-at="2020-08-07T19:16:23 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successfulRentalsSearch -->
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.VacationRentalsTests@290dbf45]" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2020-08-07T19:16:23 EDT" finished-at="2020-08-07T19:16:23 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=successfulRentalsSearch status=SUCCESS method=VacationRentalsTests.successfulRentalsSearch()[pri:0, instance:tests.VacationRentalsTests@290dbf45] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+      </class> <!-- tests.VacationRentalsTests -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
