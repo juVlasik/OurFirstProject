@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.MainPageTests">
+      <class name="tests.ListPropertyPageTests">
         <methods>
-          <include name="reserveAFlightButtonCheck"/>
+          <include name="listYourPropertyDDTest" invocation-numbers="0 2 4"/>
           <include name="tearDownMethod"/>
           <include name="setUpMethod"/>
         </methods>
-      </class> <!-- tests.MainPageTests -->
+      </class> <!-- tests.ListPropertyPageTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

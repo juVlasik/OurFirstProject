@@ -25,6 +25,28 @@ public class MainPage {
 		 
 	}
 	
+        @FindBy (xpath = "//a[contains(text(),\" List your property \")]")
+        public WebElement listYourProperty;
+        
+        
+        
+        
+        @FindBy (xpath = "(//a[contains(text(),\" Get Inspired\")])[2]")
+        public WebElement getInspiredButton;
+        
+
+        @FindBy (xpath = "//img[@id='hero-logo']")
+        public WebElement saleLink;
+        
+        @FindBy (id = "chatbotCTA-gethelp-button")
+        public WebElement covidMenuButton;
+        
+        @FindBy (xpath = "//a[@class='flex-link popupText popupTextColorTVLY']")
+        public List<WebElement> covidMenu;
+        
+        
+        
+        
  //Test case 6
         
         @FindBy (xpath = "//figure[@class='image aspect-ratio16-9']")
@@ -159,6 +181,9 @@ public class MainPage {
         
         @FindBy (xpath = "//p[contains(text(), \"Please enter a password\")]")
         public WebElement errorMessage;
+        
+        @FindBy (xpath = "//p[@id='signInEmailErrorMessage']")
+        public WebElement errorMessage2;
         
         
         @FindBy (xpath = "//*[@id=\"all-in-mobile-header-link\"]")

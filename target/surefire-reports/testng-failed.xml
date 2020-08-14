@@ -1,28 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
-  <test thread-count="5" verbose="0" name="Group Test(failed)">
-    <groups>
-      <run>
-        <include name="newTest"/>
-      </run>
-    </groups>
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Failed suite [Default suite]]">
+  <test thread-count="5" verbose="0" name="Default test(failed)(failed)">
     <classes>
-      <class name="tests.MainPageTests">
+      <class name="tests.LoginPageTests">
         <methods>
-          <include name="reserveAFlightButtonCheck"/>
+          <include name="negativeLogin3"/>
           <include name="tearDownMethod"/>
           <include name="setUpMethod"/>
         </methods>
-      </class> <!-- tests.MainPageTests -->
-      <class name="tests.TravelDealsTests">
-        <methods>
-          <include name="testTravelDealsPagePackges"/>
-          <include name="tearDownMethod"/>
-          <include name="testTravelDealsOldPage"/>
-          <include name="setUpMethod"/>
-        </methods>
-      </class> <!-- tests.TravelDealsTests -->
+      </class> <!-- tests.LoginPageTests -->
     </classes>
-  </test> <!-- Group Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Default suite]] -->

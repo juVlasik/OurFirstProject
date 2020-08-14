@@ -16,7 +16,7 @@ import utilities.Driver;
 public class FlightBookingPageTests extends TestBase {
 
 
-@Test (groups = {"newTest"})//test 9
+@Test (groups = {"sprint2"})//test 9
 public void reserveAFlightButtonCheck() {
 	     MainPage mp = new MainPage();
        BookingFlightPage bf = new BookingFlightPage();
@@ -46,14 +46,14 @@ public void reserveAFlightButtonCheck() {
 	    BrowserUtilities.waitFor(5);
 	    
 	    //Switching handle
-	    String parentWindowHandle=driver.getWindowHandle();
+	    String parentWindowHandle=Driver.getDriver().getWindowHandle();
 	
-	Set<String> allHandles = driver.getWindowHandles();
+	Set<String> allHandles = Driver.getDriver().getWindowHandles();
 	
 	
 	for (String handle : allHandles) {
 		if(!handle.equals(parentWindowHandle)) {
-			driver.switchTo().window(handle);
+			Driver.getDriver().switchTo().window(handle);
 			
 		}
 	}
@@ -139,14 +139,14 @@ public void bookAFlightTest1(){ //2 TESTS: Checking departure/destination
      		//System.out.println("current handle" + Driver.getDriver().getWindowHandle());
 	       	   String currentHandle = "CDwindow-1F09F91102C01BF8919F2D2C17C94BB6";
 	       	   
-	       	String parentWindowHandle=driver.getWindowHandle();
+	       	String parentWindowHandle=Driver.getDriver().getWindowHandle();
 			
-			Set<String> allHandles = driver.getWindowHandles();
+			Set<String> allHandles = Driver.getDriver().getWindowHandles();
 			
 			
 			for (String handle : allHandles) {
 				if(!handle.equals(parentWindowHandle)) {
-					driver.switchTo().window(handle);
+					Driver.getDriver().switchTo().window(handle);
 					
 				}
 				

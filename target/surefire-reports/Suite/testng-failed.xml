@@ -4,25 +4,38 @@
   <test thread-count="5" verbose="0" name="Group Test(failed)">
     <groups>
       <run>
-        <include name="newTest"/>
+        <include name="sprint3"/>
       </run>
     </groups>
     <classes>
+      <class name="tests.GetInspiredTests">
+        <methods>
+          <include name="tearDownMethod"/>
+          <include name="mostPopularLinksVarification"/>
+          <include name="setUpMethod"/>
+        </methods>
+      </class> <!-- tests.GetInspiredTests -->
+      <class name="tests.LoginPageTests">
+        <methods>
+          <include name="negativeLogin3"/>
+          <include name="tearDownMethod"/>
+          <include name="setUpMethod"/>
+        </methods>
+      </class> <!-- tests.LoginPageTests -->
       <class name="tests.MainPageTests">
         <methods>
-          <include name="reserveAFlightButtonCheck"/>
+          <include name="thingsToDoDatesVafification"/>
           <include name="tearDownMethod"/>
           <include name="setUpMethod"/>
         </methods>
       </class> <!-- tests.MainPageTests -->
-      <class name="tests.TravelDealsTests">
+      <class name="tests.ListPropertyPageTests">
         <methods>
-          <include name="testTravelDealsPagePackges"/>
+          <include name="listYourPropertyDDTest" invocation-numbers="0 1 3 4"/>
           <include name="tearDownMethod"/>
-          <include name="testTravelDealsOldPage"/>
           <include name="setUpMethod"/>
         </methods>
-      </class> <!-- tests.TravelDealsTests -->
+      </class> <!-- tests.ListPropertyPageTests -->
     </classes>
   </test> <!-- Group Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

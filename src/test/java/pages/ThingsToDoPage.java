@@ -38,7 +38,8 @@ public WebElement newOnTButton;
 @FindBy (xpath = "(//input[@name='sortRadioGroup'])[2]")
 public WebElement sortLToH;	
 
-
+@FindBy (xpath = "//span[@id='fullDates']")
+public WebElement actualDates;
 
 
 }

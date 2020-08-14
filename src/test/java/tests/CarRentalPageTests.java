@@ -23,7 +23,7 @@ public class CarRentalPageTests extends TestBase{
 
 	//test 10 //Inserting info at Car Rental Payment Page
 
-	@Test (dataProvider="car booking info", groups = {"newTest"})   
+	@Test (dataProvider="car booking info", groups = {"sprint2"})   
 
 	public void fcarRentPaymentPageWithdataProvider(String name, String phoneNo, 
 			String email, String password, String password2)throws InterruptedException {   
@@ -38,14 +38,14 @@ public class CarRentalPageTests extends TestBase{
 		BrowserUtilities.waitFor(5);
 		
 	    //Switching handle
-	    String parentWindowHandle=driver.getWindowHandle();
+	    String parentWindowHandle=Driver.getDriver().getWindowHandle();
 
-	Set<String> allHandles = driver.getWindowHandles();
+	Set<String> allHandles = Driver.getDriver().getWindowHandles();
 
 
 	for (String handle : allHandles) {
 		if(!handle.equals(parentWindowHandle)) {
-			driver.switchTo().window(handle);
+			Driver.getDriver().switchTo().window(handle);
 			
 		}
 	}
@@ -88,7 +88,9 @@ public class CarRentalPageTests extends TestBase{
 	    @DataProvider (name = "car booking info")
 		public Object[][] get(){
 			return new Object[][] {
-				{"John Doe","5711234567" ,"jdoe.11@gmail.com" , "jdoejdoe", "jdoejdoe"}
+				
+				{"John Doe","5711234567" ,"jdoe.11@gmail.com" , "jdoejdoe", "jdoejdoe"},
+				{"Jane Doe", "5714567890", "jdoe.01@gmail.com", "blahblah", "blahblah"}
 				
 			};
 	    }
@@ -97,7 +99,7 @@ public class CarRentalPageTests extends TestBase{
 	
 
 
-@Test (groups = {"newTest"})//test 8
+@Test (groups = {"sprint2"})//test 8
 
 public void carRentPaymentPageVerification() {
 	
@@ -111,14 +113,14 @@ public void carRentPaymentPageVerification() {
 	BrowserUtilities.waitFor(5);
 	
     //Switching handle
-    String parentWindowHandle=driver.getWindowHandle();
+    String parentWindowHandle=Driver.getDriver().getWindowHandle();
 
-Set<String> allHandles = driver.getWindowHandles();
+Set<String> allHandles = Driver.getDriver().getWindowHandles();
 
 
 for (String handle : allHandles) {
 	if(!handle.equals(parentWindowHandle)) {
-		driver.switchTo().window(handle);
+		Driver.getDriver().switchTo().window(handle);
 		
 	}
 }

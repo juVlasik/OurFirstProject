@@ -15,7 +15,7 @@ public class VacationRentalsTests extends TestBase {
 
 	//Annas's code
 	
-	@Test (groups = {"newTest"})
+	@Test (groups = {"sprint2"})
 	public void successfulMoveToVacationRentalsPage() throws Exception {
 		MainPage mp = new MainPage();
 		mp.VacationRentalsButton.click();
@@ -26,7 +26,7 @@ public class VacationRentalsTests extends TestBase {
 	}
 	
 	
-	@Test (groups = {"newTest"})
+	@Test (groups = {"sprint2"})
 	public void successfulRentalsSearch() throws Exception {
 		MainPage mp = new MainPage();
 		mp.VacationRentalsButton.click();

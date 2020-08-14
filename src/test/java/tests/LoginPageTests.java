@@ -36,7 +36,28 @@ public void negativeLogin2() { //trying to Login with wrong username and NO pass
     assertEquals(actual, expected); //Checking if error message pops up if we don't provide a password for Login
 }
 
-                                                           
+@Test (groups = {"sprint3"})
+
+public void negativeLogin3() { //trying to Login with no username 
+	MainPage mp = new MainPage();
+
+	Faker f = new Faker();
+	
+  mp.accountButton.click();
+
+  mp.accSignIn.click();
+  
+  mp.signinEmail.sendKeys(Keys.TAB);
+
+  mp.signinPassword.sendKeys(f.funnyName().toString());
+  
+  mp.signinButton.click();
+  
+  String actual = mp.errorMessage2.getText();
+  String expected = "Please enter an email address";
+  
+  assertEquals(actual, expected); //Checking if error message pops up if we don't provide a password for Login
+}                                        
 	
 	
 	
