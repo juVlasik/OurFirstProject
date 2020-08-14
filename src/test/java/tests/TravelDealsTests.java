@@ -66,8 +66,7 @@ public class TravelDealsTests extends TestBase {
 		
 		td.packagesButton.click();
 		td.packagesLeavingFromButton.click();
-		td.packagesInputBoxGoingTo.sendKeys("New Work" + Keys.ENTER);
-	
+		td.packagesSearchButton.click();
 		
 		
 	}
