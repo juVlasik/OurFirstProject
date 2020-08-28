@@ -3,13 +3,31 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="tests.ListPropertyPageTests">
+=======
+<<<<<<< HEAD
+      <class name="tests.VacationRentalsTests">
+        <methods>
+          <include name="successfulRentalsSearch"/>
+          <include name="tearDownMethod"/>
+          <include name="setUpMethod"/>
+        </methods>
+      </class> <!-- tests.VacationRentalsTests -->
+=======
+      <class name="tests.MainPageTests">
+>>>>>>> cf03a6984a200e0c58759307fd3235de28637f48
         <methods>
           <include name="listYourPropertyDDTest" invocation-numbers="0 2 4"/>
           <include name="tearDownMethod"/>
           <include name="setUpMethod"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- tests.ListPropertyPageTests -->
+=======
+      </class> <!-- tests.MainPageTests -->
+>>>>>>> 7977cab43ed8a0868dd3c05b741244178d5c8749
+>>>>>>> cf03a6984a200e0c58759307fd3235de28637f48
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

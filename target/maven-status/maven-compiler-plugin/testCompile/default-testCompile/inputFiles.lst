@@ -1,3 +1,21 @@
+<<<<<<< HEAD
+C:\Users\Owner\git\OurFirstProject\src\test\java\tests\TravelDealsTests.java
+C:\Users\Owner\git\OurFirstProject\src\test\java\pages\TravelDealsPage.java
+C:\Users\Owner\git\OurFirstProject\src\test\java\tests\VacationRentalsTests.java
+C:\Users\Owner\git\OurFirstProject\src\test\java\tests\TestBase.java
+C:\Users\Owner\git\OurFirstProject\src\test\java\pages\MainPage.java
+C:\Users\Owner\git\OurFirstProject\src\test\java\tests\MainPageTests.java
+C:\Users\Owner\git\OurFirstProject\src\test\java\pages\ThingsToDoPage.java
+C:\Users\Owner\git\OurFirstProject\src\test\java\pages\BookingFlightPage.java
+C:\Users\Owner\git\OurFirstProject\src\test\java\pages\VacationRentalsPage.java
+C:\Users\Owner\git\OurFirstProject\src\test\java\tests\MobilePageTest.java
+C:\Users\Owner\git\OurFirstProject\src\test\java\utilities\Driver.java
+C:\Users\Owner\git\OurFirstProject\src\test\java\pages\CarRentalPage.java
+C:\Users\Owner\git\OurFirstProject\src\test\java\utilities\BrowserUtilities.java
+C:\Users\Owner\git\OurFirstProject\src\test\java\pages\HotelsBookingPage.java
+C:\Users\Owner\git\OurFirstProject\src\test\java\tests\Example.java
+C:\Users\Owner\git\OurFirstProject\src\test\java\utilities\ConfigReader.java
+=======
 C:\Users\ardil\git\OurFirstProject\src\test\java\tests\TravelDealsTests.java
 C:\Users\ardil\git\OurFirstProject\src\test\java\tests\MobilePageTests.java
 C:\Users\ardil\git\OurFirstProject\src\test\java\pages\MainPage.java
@@ -24,3 +42,4 @@ C:\Users\ardil\git\OurFirstProject\src\test\java\tests\CruisesTests.java
 C:\Users\ardil\git\OurFirstProject\src\test\java\tests\VacationRentalsTests.java
 C:\Users\ardil\git\OurFirstProject\src\test\java\tests\MainPageTests.java
 C:\Users\ardil\git\OurFirstProject\src\test\java\utilities\Driver.java
+>>>>>>> 7977cab43ed8a0868dd3c05b741244178d5c8749
